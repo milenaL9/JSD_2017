@@ -1,0 +1,17 @@
+{% macro input(component, type)%}
+<label for = "{{component.name}}">{{component.label}}</label>
+            <input type="{{component.componentType|covertComponentType}}" name="{{component.name}}"/><br/><br/>
+{% endmacro %}
+
+{% macro buttonInput(component)%}
+<input type = "{{component.buttonType}}" value = "{{component.label}}"/>
+{% endmacro %}
+
+{% macro comboboxInput(component)%}
+<br><label for = "{{component.name}}">{{component.label}}</label>
+            <select name="{{component.name}}">
+    {% for option in component.options %}
+                <option value="{{option.value}}">{{option.label}}</option>
+    {% endfor %}
+            </select><br/><br/>
+{% endmacro %}

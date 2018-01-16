@@ -1,0 +1,62 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+2355204210080 -> 2355204245880 [label="forms:0" arrowtail=diamond dir=both]
+2355204245880 -> 2355204246216 [label="components:0" arrowtail=diamond dir=both]
+2355204246216[label="{name:Field|+label:str='Name:'\l+componentType:str='TextField'\l}"]
+2355204245880 -> 2355204246272 [label="components:1" arrowtail=diamond dir=both]
+2355204246272[label="{surname:Field|+label:str='Surname:'\l+componentType:str='TextField'\l}"]
+2355204245880 -> 2355204246440 [label="components:2" arrowtail=diamond dir=both]
+2355204246440[label="{age:Field|+label:str='Age:'\l+componentType:str='TextField'\l}"]
+2355204245880 -> 2355204246496 [label="components:3" arrowtail=diamond dir=both]
+2355204246496[label="{checkbox:Field|+label:str='CheckBox:'\l+componentType:str='Checkbox'\l}"]
+2355204245880 -> 2355204246608 [label="components:4" arrowtail=diamond dir=both]
+2355204246608 -> 2355204246720 [label="options:0" arrowtail=diamond dir=both]
+2355204246720[label="{:Option|+value:str='mesec'\l+label:str='Mesec'\l}"]
+2355204246608 -> 2355204246776 [label="options:1" arrowtail=diamond dir=both]
+2355204246776[label="{:Option|+value:str='nebo'\l+label:str='Nebo'\l}"]
+2355204246608 -> 2355204246944 [label="options:2" arrowtail=diamond dir=both]
+2355204246944[label="{:Option|+value:str='zvezdice'\l+label:str='Zvezdice'\l}"]
+2355204246608 -> 2355204247112 [label="options:3" arrowtail=diamond dir=both]
+2355204247112[label="{:Option|+value:str='sijalice'\l+label:str='Sijalice'\l}"]
+2355204246608[label="{combobox:Select|+label:str='ComboBox:'\l}"]
+2355204245880 -> 2355204246664 [label="components:5" arrowtail=diamond dir=both]
+2355204246664[label="{submit:Button|+buttonType:str='Submit'\l+label:str='Ok'\l}"]
+2355204245880 -> 2355204246328 [label="components:6" arrowtail=diamond dir=both]
+2355204246328[label="{reset:Button|+buttonType:str='Reset'\l+label:str='Cancel'\l}"]
+2355204245880[label="{:Form|+formTitle:str='Teacher'\l}"]
+2355204210080 -> 2355204245152 [label="forms:1" arrowtail=diamond dir=both]
+2355204245152 -> 2355204247224 [label="components:0" arrowtail=diamond dir=both]
+2355204247224[label="{ime:Field|+label:str='Ime:'\l+componentType:str='TextField'\l}"]
+2355204245152 -> 2355204247392 [label="components:1" arrowtail=diamond dir=both]
+2355204247392[label="{prezime:Field|+label:str='Prezime:'\l+componentType:str='TextField'\l}"]
+2355204245152 -> 2355204247448 [label="components:2" arrowtail=diamond dir=both]
+2355204247448[label="{godine:Field|+label:str='Godine:'\l+componentType:str='TextField'\l}"]
+2355204245152 -> 2355204227144 [label="components:3" arrowtail=diamond dir=both]
+2355204227144[label="{checkbox:Field|+label:str='CheckB:'\l+componentType:str='Checkbox'\l}"]
+2355204245152 -> 2355204227312 [label="components:4" arrowtail=diamond dir=both]
+2355204227312 -> 2355204227536 [label="options:0" arrowtail=diamond dir=both]
+2355204227536[label="{:Option|+value:str='sunce'\l+label:str='Sunce'\l}"]
+2355204227312 -> 2355204227592 [label="options:1" arrowtail=diamond dir=both]
+2355204227592[label="{:Option|+value:str='more'\l+label:str='More'\l}"]
+2355204227312 -> 2355204227760 [label="options:2" arrowtail=diamond dir=both]
+2355204227760[label="{:Option|+value:str='delfin'\l+label:str='Delfin'\l}"]
+2355204227312[label="{combobox:Select|+label:str='ComboB:'\l}"]
+2355204245152 -> 2355204227424 [label="components:5" arrowtail=diamond dir=both]
+2355204227424[label="{submit:Button|+buttonType:str='Submit'\l+label:str='Potvrdi'\l}"]
+2355204245152 -> 2355204227200 [label="components:6" arrowtail=diamond dir=both]
+2355204227200[label="{reset:Button|+buttonType:str='Reset'\l+label:str='Otkazi'\l}"]
+2355204245152[label="{:Form|+formTitle:str='Uciteljica'\l}"]
+2355204210080[label="{:Html|+pageTitle:str='Generisanje koda'\l+content:str='Naslov H1'\l+align:str='left'\l+footerLabel:str='Posted by: Hege Refsnes'\l+class:str='footer'\l}"]
+
+}

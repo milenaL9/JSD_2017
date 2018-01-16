@@ -1,0 +1,51 @@
+Html:
+    "HTML" "htmlBegin"
+    "Head" "headBegin"
+    pageTitle = STRING
+    "Head" "headEnd"
+    "Body" "bodyBegin"
+    "H1" content = STRING align = AlignType
+    forms += Form
+    "Footer" footerLabel = STRING class = STRING
+    "Body" "bodyEnd"
+    "HTML" "htmlEnd"
+;
+
+AlignType:
+    'left' | 'right' | 'center' | 'justify'
+;
+
+Form:
+    "Form" "begin"
+    formTitle = STRING
+    components += Component
+    "Form" "end"
+;
+
+Component:
+ Field | Button | Select
+;
+
+Field:
+    "field" name = ID label = STRING componentType = ComponentType
+;
+
+ComponentType:
+    'TextField' | 'TextArea' | 'Checkbox'
+;
+
+Select:
+    "select" name = ID label = STRING options += Option
+;
+
+Option:
+    "option" value = STRING label = STRING
+;
+
+Button:
+   "button" buttonType = ButtonType name = ID label = STRING
+;
+
+ButtonType:
+    'Submit' | 'Reset' | 'Button'
+;

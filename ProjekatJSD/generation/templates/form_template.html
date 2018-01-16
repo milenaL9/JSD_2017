@@ -1,0 +1,27 @@
+{% extends "baseTemplate.html" %}
+
+<html>
+<head><title>{% block title %}{{html.pageTitle}}{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<h1 align="{{html.align}}">{{html.content}}</h1>
+{% for form in html.forms %}
+    <form action = "#">
+        <fieldset>
+            <legend>{{form.formTitle}}</legend>
+            {% for component in form.components %}
+                {% if component.componentType is defined %}
+            {{ macro.input(component, type='ComponentType') }}
+                {% elif component.buttonType is defined  %}
+            {{ macro.buttonInput(component)}}
+                {% else %}
+            {{macro.comboboxInput(component)}}
+                {% endif %}
+            {% endfor %}
+        </fieldset>
+    </form>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

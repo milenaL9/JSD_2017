@@ -1,0 +1,64 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+2355188144120[ label="{ComponentType|TextField\|TextArea\|Checkbox}"]
+
+2355188165832[ label="{Button|+buttonType:ButtonType\l+name:ID\l+label:STRING\l}"]
+
+2355188147896 -> 2355188164888[arrowtail=diamond, dir=both, headlabel="forms 1..*"]
+2355188147896[ label="{Html|+pageTitle:STRING\l+content:STRING\l+align:AlignType\l+footerLabel:STRING\l+class:STRING\l}"]
+
+2355188164888 -> 2355188155448[arrowtail=diamond, dir=both, headlabel="components 1..*"]
+2355188164888[ label="{Form|+formTitle:STRING\l}"]
+
+2355188161112[ label="{AlignType|left\|right\|center\|justify}"]
+
+2355188180936[ label="{ButtonType|Submit\|Reset\|Button}"]
+
+2355188151672 -> 2355188152616[arrowtail=diamond, dir=both, headlabel="options 1..*"]
+2355188151672[ label="{Select|+name:ID\l+label:STRING\l}"]
+
+2355188148840[ label="{Field|+name:ID\l+label:STRING\l+componentType:ComponentType\l}"]
+
+2355188155448[ label="{*Component|}"]
+2355188155448 -> 2355188148840 [dir=back]
+2355188155448 -> 2355188165832 [dir=back]
+2355188155448 -> 2355188151672 [dir=back]
+
+2355188152616[ label="{Option|+value:STRING\l+label:STRING\l}"]
+
+2355188256456[ label="{ID|}"]
+
+2355188265896[ label="{STRING|}"]
+
+2355188261176[ label="{INT|}"]
+
+2355188137512[ label="{BASETYPE|}"]
+2355188137512 -> 2355188142232 [dir=back]
+2355188137512 -> 2355188257400 [dir=back]
+2355188137512 -> 2355188256456 [dir=back]
+2355188137512 -> 2355188265896 [dir=back]
+
+2355188257400[ label="{BOOL|}"]
+
+2355188163000[ label="{*OBJECT|}"]
+2355188163000 -> 2355188137512 [dir=back]
+
+2355188141288[ label="{FLOAT|}"]
+
+2355188142232[ label="{NUMBER|}"]
+2355188142232 -> 2355188141288 [dir=back]
+2355188142232 -> 2355188261176 [dir=back]
+
+
+}

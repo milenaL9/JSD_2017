@@ -1,0 +1,47 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    edge[dir=black,arrowtail=empty]
+
+
+59949352 -> 60369216 [label="heading" arrowtail=diamond dir=both]
+60369216[label="{:Heading|+text:str=Neki naslov\l+alignmet:str=Center\l}"]
+59949352 -> 60262328 [label="forms:0" arrowtail=diamond dir=both]
+60262328 -> 57161656 [label="components:0" arrowtail=diamond dir=both]
+57161656[label="{name:NonEnumeratedField|+type:str=field\l+label:str=Name:\l+componentType:str=TextField\l}"]
+60262328 -> 57159752 [label="components:1" arrowtail=diamond dir=both]
+57159752[label="{surname:NonEnumeratedField|+type:str=field\l+label:str=Surname:\l+componentType:str=TextField\l}"]
+60262328 -> 58676280 [label="components:2" arrowtail=diamond dir=both]
+58676280[label="{age:NonEnumeratedField|+type:str=field\l+label:str=Age:\l+componentType:str=TextField\l}"]
+60262328 -> 59038128 [label="components:3" arrowtail=diamond dir=both]
+59038128[label="{position:Combobox|+type:str=combobox\l+label:str=Professional title:\l+componentType:str=Combobox\l+values:list=[Teaching assistant,Assistant professor,Professor]\l}"]
+60262328 -> 58676728 [label="components:4" arrowtail=diamond dir=both]
+58676728[label="{ok:Button|+type:str=button\l+text:str=Ok\l+buttonType:str=Submit\l}"]
+60262328 -> 58675552 [label="components:5" arrowtail=diamond dir=both]
+58675552[label="{cancel:Button|+type:str=button\l+text:str=Cancel\l+buttonType:str=Reset\l}"]
+60262328[label="{teacher:Form|+title:str=Teacher\l}"]
+59949352 -> 57161096 [label="forms:1" arrowtail=diamond dir=both]
+57161096 -> 58890392 [label="components:0" arrowtail=diamond dir=both]
+58890392[label="{name:NonEnumeratedField|+type:str=field\l+label:str=Name:\l+componentType:str=TextField\l}"]
+57161096 -> 58891680 [label="components:1" arrowtail=diamond dir=both]
+58891680[label="{surname:NonEnumeratedField|+type:str=field\l+label:str=Surname:\l+componentType:str=TextField\l}"]
+57161096 -> 58889272 [label="components:2" arrowtail=diamond dir=both]
+58889272[label="{age:NonEnumeratedField|+type:str=field\l+label:str=Age:\l+componentType:str=TextField\l}"]
+57161096 -> 58889552 [label="components:3" arrowtail=diamond dir=both]
+58889552[label="{gpa:NonEnumeratedField|+type:str=field\l+label:str=GPA:\l+componentType:str=TextField\l}"]
+57161096 -> 59082064 [label="components:4" arrowtail=diamond dir=both]
+59082064[label="{graduated:NonEnumeratedField|+type:str=field\l+label:str=Graduated:\l+componentType:str=Checkbox\l}"]
+57161096 -> 59081448 [label="components:5" arrowtail=diamond dir=both]
+59081448[label="{ok:Button|+type:str=button\l+text:str=Ok\l+buttonType:str=Submit\l}"]
+57161096 -> 59083968 [label="components:6" arrowtail=diamond dir=both]
+59083968[label="{cancel:Button|+type:str=button\l+text:str=Cancel\l+buttonType:str=Reset\l}"]
+57161096[label="{student:Form|+title:str=Student\l}"]
+59949352[label="{:Page|+title:str=Forma Test\l+footer:str=Copyrighted 2014\l}"]
+
+}
