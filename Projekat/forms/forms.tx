@@ -1,22 +1,57 @@
-Form:
-    "Form" "begin"
-    title = STRING
-    components += Component
-    "Form" "end"
+Rodoslov:
+      "rodoslov"
+      title = STRING
+      vladari += Vladar
 ;
 
-Component:
- Field | Button
+Vladar:
+    "Vladar" "begin"
+    Ime
+    titula += Titula
+    predak *= Predak
+    potomci *= Potomak
+    "Vladar" "end"
 ;
 
-Field:
-    "field" name = ID label = STRING componentType = ComponentType
+Ime:
+    "ime" name = ID label=STRING value=STRING
 ;
 
-ComponentType:
-    'TextField' | 'TextArea' | 'Checkbox' | "Combobox"
+Titula:
+    "titula" "begin"
+    tip = TitulaType
+    teritorija=Teritorija
+    PocetakVladavine
+    "-"
+    KrajVladavine
+    "titula" "end"
 ;
 
-Button:
-    "button" name = ID label = STRING
+TitulaType:
+    'velikiZupan'|'kralj'|'car'|'carica'|'kneginja'
+;
+
+Teritorija:
+    "teritorija"
+    teritorija += STRING
+;
+
+PocetakVladavine:
+    "pocetakVladavine" name = ID label=INT
+;
+
+KrajVladavine:
+    "krajVladavine" name = ID label=INT
+;
+
+Predak:
+    "predak" "begin"
+     Vladar
+    "predak" "end"
+;
+
+Potomak:
+    "potomak" "begin"
+     Vladar
+    "potomak" "end"
 ;

@@ -1,9 +1,30 @@
-Form begin
-"Teacher"
-field name "Name:" TextField
-field surname "Surname:" TextField
-field age "Age:" TextField
-field position "Professional title:" Combobox
-button ok "Ok"
-button cancel "Cancel"
-Form end
+rodoslov "Nemanjici"
+
+Vladar begin
+    ime ime "ime:"  "Nemanja"
+    titula begin car
+        teritorija "Srbija"
+        pocetakVladavine pocetak 1234
+        -
+        krajVladavine kraj 1222
+    titula end
+    titula begin kralj
+        teritorija "BiH"
+        pocetakVladavine pocetak 1234
+        -
+        krajVladavine kraj 1222
+    titula end
+    potomak begin
+        Vladar begin
+            ime ime "ime:"  "Nemanja"
+            titula begin car
+                teritorija "Srbija"
+                pocetakVladavine pocetak 1234
+                -
+                krajVladavine kraj 1222
+            titula end
+        Vladar end
+    potomak end
+Vladar end
+
+

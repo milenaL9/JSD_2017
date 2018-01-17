@@ -17,7 +17,7 @@ def generate(template_name, output_name, render_vars):
 
 def main(debug=False):
     model = execute(os.path.join(root, "forms"), 'forms.tx', 'example.form', debug, debug)
-    generate("form_template.html", "form.html", {"form": model})
+    generate("form_template.html", "form.html", {"rodoslov": model})
 
 if __name__ == '__main__':
     main(True)

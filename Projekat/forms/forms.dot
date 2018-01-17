@@ -11,41 +11,55 @@
     edge[dir=black,arrowtail=empty]
 
 
-2663470629544[ label="{Field|+name:ID\l+label:STRING\l+componentType:ComponentType\l}"]
+20801080 -> 20819960[arrowtail=diamond, dir=both, headlabel="titula 1..*"]
+20801080 -> 20834120[arrowtail=diamond, dir=both, headlabel="predak 0..*"]
+20801080 -> 20836952[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+20801080[ label="{Vladar|}"]
 
-2663470617272[ label="{ComponentType|TextField\|TextArea\|Checkbox\|Combobox}"]
+20831288[ label="{KrajVladavine|+name:ID\l+label:INT\l}"]
 
-2663470621048[ label="{*Component|}"]
-2663470621048 -> 2663470629544 [dir=back]
-2663470621048 -> 2663470638040 [dir=back]
+20809576 -> 20801080[arrowtail=diamond, dir=both, headlabel="vladari 1..*"]
+20809576[ label="{Rodoslov|+title:STRING\l}"]
 
-2663470638040[ label="{Button|+name:ID\l+label:STRING\l}"]
+20822792[ label="{TitulaType|velikiZupan\|kralj\|car\|carica\|kneginja}"]
 
-2663470635208 -> 2663470621048[arrowtail=diamond, dir=both, headlabel="components 1..*"]
-2663470635208[ label="{Form|+title:STRING\l}"]
+20836952[ label="{*Potomak|potomak begin Vladar potomak end}"]
+20836952 -> 20801080 [dir=back]
 
-2663470636152[ label="{FLOAT|}"]
+20825624[ label="{Teritorija|+teritorija:list[STRING]\l}"]
 
-2663470640872[ label="{BOOL|}"]
+20834120[ label="{*Predak|predak begin Vladar predak end}"]
+20834120 -> 20801080 [dir=back]
 
-2663470628600[ label="{INT|}"]
+20819960 -> 20825624[arrowtail=diamond, dir=both, headlabel="teritorija "]
+20819960[ label="{Titula|+tip:TitulaType\l}"]
 
-2663470622936[ label="{*OBJECT|}"]
-2663470622936 -> 2663470634264 [dir=back]
+20828456[ label="{PocetakVladavine|+name:ID\l+label:INT\l}"]
 
-2663470634264[ label="{BASETYPE|}"]
-2663470634264 -> 2663470630488 [dir=back]
-2663470634264 -> 2663470640872 [dir=back]
-2663470634264 -> 2663469381032 [dir=back]
-2663470634264 -> 2663469385752 [dir=back]
+20817128[ label="{Ime|+name:ID\l+label:STRING\l+value:STRING\l}"]
 
-2663469381032[ label="{ID|}"]
+20807688[ label="{FLOAT|}"]
 
-2663469385752[ label="{STRING|}"]
+20802024[ label="{BOOL|}"]
 
-2663470630488[ label="{NUMBER|}"]
-2663470630488 -> 2663470636152 [dir=back]
-2663470630488 -> 2663470628600 [dir=back]
+20796360[ label="{ID|}"]
+
+20813352[ label="{BASETYPE|}"]
+20813352 -> 20810520 [dir=back]
+20813352 -> 20802024 [dir=back]
+20813352 -> 20796360 [dir=back]
+20813352 -> 20799192 [dir=back]
+
+20810520[ label="{NUMBER|}"]
+20810520 -> 20807688 [dir=back]
+20810520 -> 20804856 [dir=back]
+
+20816184[ label="{*OBJECT|}"]
+20816184 -> 20813352 [dir=back]
+
+20799192[ label="{STRING|}"]
+
+20804856[ label="{INT|}"]
 
 
 }

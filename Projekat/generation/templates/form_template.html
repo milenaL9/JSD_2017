@@ -2,17 +2,12 @@
 <head><title>Forma</title> </head>
 <body>
     <form action = "#">
-        <fieldset>
-            <legend>{{form.title}}</legend>
-            {% for component in form.components %}
-                {% if component.componentType is defined %}
-                <label for = "{{component.name}}">{{component.label}}</label>
-                <input name = "{{component.name}}" /><br/><br/>
-                {% else %}
-                <input type = "button" value = "{{component.label}}"/>
-                {% endif %}
+            <legend>{{rodoslov.title}}</legend>
+            {% for vladar in rodoslov.vladari %}
+                <label for = "{{vladar.name}}">{{vladar.label}}</label>
+                <input name = "{{vladar.name}}" value="{{ vladar.label }}" /><br/><br/>
             {% endfor %}
-        </fieldset>
     </form>
 </body>
 </html>
+
