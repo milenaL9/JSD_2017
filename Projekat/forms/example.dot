@@ -1,0 +1,28 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+2663485409320 -> 2663485452864 [label="components:0" arrowtail=diamond dir=both]
+2663485452864[label="{name:Field|+label:str='Name:'\l+componentType:str='TextField'\l}"]
+2663485409320 -> 2663485452920 [label="components:1" arrowtail=diamond dir=both]
+2663485452920[label="{surname:Field|+label:str='Surname:'\l+componentType:str='TextField'\l}"]
+2663485409320 -> 2663485453088 [label="components:2" arrowtail=diamond dir=both]
+2663485453088[label="{age:Field|+label:str='Age:'\l+componentType:str='TextField'\l}"]
+2663485409320 -> 2663485453144 [label="components:3" arrowtail=diamond dir=both]
+2663485453144[label="{position:Field|+label:str='Professional title:'\l+componentType:str='Combobox'\l}"]
+2663485409320 -> 2663485453256 [label="components:4" arrowtail=diamond dir=both]
+2663485453256[label="{ok:Button|+label:str='Ok'\l}"]
+2663485409320 -> 2663485453312 [label="components:5" arrowtail=diamond dir=both]
+2663485453312[label="{cancel:Button|+label:str='Cancel'\l}"]
+2663485409320[label="{:Form|+title:str='Teacher'\l}"]
+
+}
