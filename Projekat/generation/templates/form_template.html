@@ -4,8 +4,8 @@
     <form action = "#">
             <legend>{{rodoslov.title}}</legend>
             {% for vladar in rodoslov.vladari %}
-                <label for = "{{vladar.name}}">{{vladar.label}}</label>
-                <input name = "{{vladar.name}}" value="{{ vladar.label }}" /><br/><br/>
+                <label for = "{{vladar.ime.nameIme}}">{{vladar.ime.labelIme}}</label>
+                <input name = "{{vladar.ime.nameIme}}" value="{{ vladar.ime.value}}" /><br/><br/>
             {% endfor %}
     </form>
 </body>

@@ -6,7 +6,7 @@ Rodoslov:
 
 Vladar:
     "Vladar" "begin"
-    Ime
+    ime = Ime
     titula += Titula
     predak *= Predak
     potomci *= Potomak
@@ -14,7 +14,7 @@ Vladar:
 ;
 
 Ime:
-    "ime" name = ID label=STRING value=STRING
+    "ime" nameIme = ID labelIme=STRING value=STRING
 ;
 
 Titula:
