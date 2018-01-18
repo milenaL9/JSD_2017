@@ -1,0 +1,39 @@
+        <label for = "{{rodoslov.rodonacelnik.ime.id}}">{{rodoslov.rodonacelnik.ime.label}}</label>
+            <input name = "{{rodoslov.rodonacelnik.ime.name}}" id = "{{rodoslov.rodonacelnik.ime.id}}" value="{{rodoslov.rodonacelnik.ime.value}}" /><br/><br/>
+            {% for titula in rodoslov.rodonacelnik.titule %}
+            <label for = "{{titula.id}}">{{titula.label}}</label>
+            <input name = "{{titula.name}}" id="{{titula.id}}" value="{{titula.tip}}" /><br/><br/>
+            <label for = "{{titula.teritorija.id}}">{{titula.teritorija.label}}</label>
+            <input name = "{{titula.teritorija.nazivTeritorije}}" id="{{titula.teritorija.id}}" value="{{titula.teritorija.nazivTeritorije}}" /><br/><br/>
+            <label for = "{{titula.teritorija.pocetakVladavine.id}}">{{titula.teritorija.pocetakVladavine.label}}</label>
+            <input name = "{{titula.teritorija.pocetakVladavine.name}}" id="{{titula.teritorija.pocetakVladavine.id}}" value="{{titula.teritorija.pocetakVladavine.value}}" /><br/><br/>
+            <label for = "{{titula.teritorija.krajVladavine.id}}">{{titula.teritorija.krajVladavine.label}}</label>
+            <input name = "{{titula.teritorija.krajVladavine.name}}" id="{{titula.teritorija.krajVladavine.id}}" value="{{titula.teritorija.krajVladavine.value}}" /><br/><br/>
+            {% endfor %}
+            <label for = "potomci">Potomci:</label><br/><br/>
+            {% for potomak in rodoslov.rodonacelnik.potomci %}
+            <input name = "{{potomak}}" value="{{potomak}}" /><br/><br/>
+            {% endfor %}
+
+            <br/><br/><label for = "vladari">Vladari:</label><br/><br/>
+            {% for vladar in rodoslov.vladari %}
+            <label for = "{{vladar.ime.id}}">{{vladar.ime.label}}</label>
+            <input name = "{{vladar.ime.name}}" id="{{vladar.ime.id}}" value="{{vladar.ime.value}}" /><br/><br/>
+                {% for titulaV in vladar.titule %}
+            <label for = "{{titulaV.id}}">{{titulaV.label}}</label>
+            <input name = "{{titulaV.name}}" id="{{titulaV.id}}" value="{{titulaV.tip}}" /><br/><br/>
+            <label for = "{{titulaV.teritorija.id}}">{{titulaV.teritorija.label}}</label>
+            <input name = "{{titulaV.teritorija.nazivTeritorije}}" id="{{titulaV.teritorija.id}}" value="{{titulaV.teritorija.nazivTeritorije}}" /><br/><br/>
+            <label for = "{{titulaV.teritorija.pocetakVladavine.id}}">{{titulaV.teritorija.pocetakVladavine.label}}</label>
+            <input name = "{{titulaV.teritorija.pocetakVladavine.name}}" id="{{titulaV.teritorija.pocetakVladavine.id}}" value="{{titulaV.teritorija.pocetakVladavine.value}}" /><br/><br/>
+            <label for = "{{titulaV.teritorija.krajVladavine.id}}">{{titulaV.teritorija.krajVladavine.label}}</label>
+            <input name = "{{titulaV.teritorija.krajVladavine.name}}" id="{{titulaV.teritorija.krajVladavine.id}}" value="{{titulaV.teritorija.krajVladavine.value}}" /><br/><br/>
+                {% endfor %}
+            <label for = "predak">Predak:</label>
+            <input name = "{{vladar.predak}}" value="{{vladar.predak}}" /><br/><br/>
+            <label for = "potomci">Potomci:</label><br/><br/>
+                {% for potomakV in vladar.potomci %}
+            <input name = "{{potomakV}}" value="{{potomakV}}" /><br/><br/>
+                {% endfor %}
+            {% endfor %}
+    
