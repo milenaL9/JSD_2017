@@ -11,7 +11,7 @@
 
     <body>
         <p>{{rodoslov.title}}</p><br/><br/>
-        <div id="tree-simple" style="height: 600px; margin: 5px; width: 900px;"> </div>
+        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
         <script>
             simple_chart_config = {
                 chart: {
@@ -19,16 +19,27 @@
                 },
 
                 nodeStructure: {
-                    text: { name: "{{rodoslov.rodonacelnik.ime.value}}" },
+                    text: { name: "{{rodoslov.rodonacelnik.ime.value}}",
+                            {% for titulaR in rodoslov.rodonacelnik.titule %}
+                            titula:    "{{titulaR.tip}},{{titulaR.teritorija.nazivTeritorije}},{{titulaR.teritorija.pocetakVladavine.value}} - {{titulaR.teritorija.krajVladavine.value}} ",
+                            {%endfor%}
+                     },
                     children: [
                         {% for vladar in rodoslov.rodonacelnik.potomci %}
                         {
-                            text: { name: "{{vladar.ime.value}}" },
+                            text: { name: "{{vladar.ime.value}}",
+                                    {% for titulaV in vladar.titule %}
+                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
+                                    {% endfor %}
+                             },
                             children:[
                                 {% for vladar1 in vladar.potomci %}
                                     {
-                                        text: { name: "{{vladar1.ime.value}}" },
-
+                                        text: { name: "{{vladar1.ime.value}}",
+                                                {% for titulaV in vladar1.titule %}
+                                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
+                                                {% endfor %}
+                                         },
                                     },
                                 {% endfor %}
                             ]

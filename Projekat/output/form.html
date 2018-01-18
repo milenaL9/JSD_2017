@@ -11,7 +11,7 @@
 
     <body>
         <p>Nemanjici</p><br/><br/>
-        <div id="tree-simple" style="height: 600px; margin: 5px; width: 900px;"> </div>
+        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
         <script>
             simple_chart_config = {
                 chart: {
@@ -19,37 +19,50 @@
                 },
 
                 nodeStructure: {
-                    text: { name: "Zavida" },
+                    text: { name: "Zavida",
+                            titula:    "car,Srbija,1234 - 1222 ",
+                     },
                     children: [
                         {
-                            text: { name: "Stefan Nemanja" },
+                            text: { name: "Stefan Nemanja",
+                                    titula: "veliki zupan, Raska,1166-1196",
+                             },
                             children:[
                                     {
-                                        text: { name: "Vukan" },
-
+                                        text: { name: "Vukan",
+                                                    titula: "veliki zupan, Raska,1202-1207",
+                                         },
                                     },
                                     {
-                                        text: { name: "Stefan Prvovencani" },
-
+                                        text: { name: "Stefan Prvovencani",
+                                                    titula: "veliki zupan, Zeta,1196-1217",
+                                         },
                                     },
                                     {
-                                        text: { name: "Rastko" },
-
+                                        text: { name: "Rastko",
+                                                    titula: "arhiepiskop, Srbija,1175-1236",
+                                         },
                                     },
                             ]
                         },
                         {
-                            text: { name: "Tihomir" },
+                            text: { name: "Tihomir",
+                                    titula: "veliki zupan, Raska,1166-1196",
+                             },
                             children:[
                             ]
                         },
                         {
-                            text: { name: "Stracimir" },
+                            text: { name: "Stracimir",
+                                    titula: "veliki zupan, Raska,1166-1196",
+                             },
                             children:[
                             ]
                         },
                         {
-                            text: { name: "Miroslav" },
+                            text: { name: "Miroslav",
+                                    titula: "veliki zupan, Raska,1166-1196",
+                             },
                             children:[
                             ]
                         },
