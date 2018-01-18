@@ -1,30 +1,12 @@
 rodoslov "Nemanjici"
 
-Vladar begin
-    ime ime "ime:"  "Nemanja"
-    titula begin car
+Rodonacelnik begin
+     ime ime "ime:"  "Zavida"
+     titula begin car
         teritorija "Srbija"
         pocetakVladavine pocetak 1234
         -
         krajVladavine kraj 1222
-    titula end
-    titula begin kralj
-        teritorija "BiH"
-        pocetakVladavine pocetak 1234
-        -
-        krajVladavine kraj 1222
-    titula end
-    potomak begin
-        Vladar begin
-            ime ime "ime:"  "Nemanja"
-            titula begin car
-                teritorija "Srbija"
-                pocetakVladavine pocetak 1234
-                -
-                krajVladavine kraj 1222
-            titula end
-        Vladar end
-    potomak end
-Vladar end
-
+     titula end
+Rodonacelnik end
 
