@@ -11,56 +11,56 @@
     edge[dir=black,arrowtail=empty]
 
 
-51414152 -> 51416984[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
-51414152 -> 51410376[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
-51414152[ label="{Teritorija|+id:ID\l+label:STRING\l+nazivTeritorije:STRING\l}"]
+52540664 -> 52546328[arrowtail=diamond, dir=both, headlabel="teritorija "]
+52540664[ label="{Titula|+id:ID\l+name:STRING\l+label:STRING\l+tip:TitulaType\l}"]
 
-51411320[ label="{TitulaType|veliki zupan\|kralj\|car\|carica\|kneginja\|arhiepiskop}"]
+52539720[ label="{PocetakVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
 
-51408488 -> 51414152[arrowtail=diamond, dir=both, headlabel="teritorija "]
-51408488[ label="{Titula|+id:ID\l+name:STRING\l+label:STRING\l+tip:TitulaType\l}"]
+52535000 -> 52537832[arrowtail=diamond, dir=both, headlabel="ime "]
+52535000 -> 52540664[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+52535000 -> 52535000[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+52535000[ label="{Vladar|+slika:STRING\l}"]
 
-51395272 -> 51386776[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
-51395272[ label="{Rodoslov|+title:STRING\l}"]
+52546328 -> 52539720[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
+52546328 -> 52521784[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
+52546328[ label="{Teritorija|+id:ID\l+label:STRING\l+nazivTeritorije:STRING\l}"]
 
-51410376[ label="{KrajVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
+52527448 -> 52518952[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
+52527448[ label="{Rodoslov|+title:STRING\l}"]
 
-51402824 -> 51405656[arrowtail=diamond, dir=both, headlabel="ime "]
-51402824 -> 51408488[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-51402824 -> 51402824[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-51402824[ label="{Vladar|}"]
+52518952 -> 52537832[arrowtail=diamond, dir=both, headlabel="ime "]
+52518952 -> 52540664[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+52518952 -> 52535000[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+52518952[ label="{Rodonacelnik|+slika:STRING\l}"]
 
-51405656[ label="{Ime|+id:ID\l+name:STRING\l+label:STRING\l+value:STRING\l}"]
+52521784[ label="{KrajVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
 
-51386776 -> 51405656[arrowtail=diamond, dir=both, headlabel="ime "]
-51386776 -> 51408488[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-51386776 -> 51402824[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-51386776[ label="{Rodonacelnik|}"]
+52537832[ label="{Ime|+id:ID\l+name:STRING\l+label:STRING\l+value:STRING\l}"]
 
-51416984[ label="{PocetakVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
+52543496[ label="{TitulaType|veliki zupan\|kralj\|car\|carica\|kneginja\|arhiepiskop}"]
 
-51384888[ label="{STRING|}"]
+52525560[ label="{FLOAT|}"]
 
-51390552[ label="{INT|}"]
+52522728[ label="{INT|}"]
 
-51387720[ label="{BOOL|}"]
+52519896[ label="{BOOL|}"]
 
-51396216[ label="{NUMBER|}"]
-51396216 -> 51393384 [dir=back]
-51396216 -> 51390552 [dir=back]
+52517064[ label="{STRING|}"]
 
-51393384[ label="{FLOAT|}"]
+52528392[ label="{NUMBER|}"]
+52528392 -> 52525560 [dir=back]
+52528392 -> 52522728 [dir=back]
 
-51401880[ label="{*OBJECT|}"]
-51401880 -> 51399048 [dir=back]
+52514232[ label="{ID|}"]
 
-51382056[ label="{ID|}"]
+52534056[ label="{*OBJECT|}"]
+52534056 -> 52531224 [dir=back]
 
-51399048[ label="{BASETYPE|}"]
-51399048 -> 51396216 [dir=back]
-51399048 -> 51387720 [dir=back]
-51399048 -> 51382056 [dir=back]
-51399048 -> 51384888 [dir=back]
+52531224[ label="{BASETYPE|}"]
+52531224 -> 52528392 [dir=back]
+52531224 -> 52519896 [dir=back]
+52531224 -> 52514232 [dir=back]
+52531224 -> 52517064 [dir=back]
 
 
 }

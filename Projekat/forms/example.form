@@ -2,6 +2,7 @@ rodoslov "Nemanjici"
 
 Rodonacelnik begin
      ZavidaImeID "zavida" "Ime:" "Zavida"
+     ""
      titula begin
         ZavidaTitulaID
         "titula"
@@ -18,6 +19,7 @@ Rodonacelnik begin
 
     Vladar begin
         StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
+        "https://ucibibapl.files.wordpress.com/2014/03/stefan-nemanja1.jpg"
         titula begin
             StefanNemanjaTitulaID
             "titula"
@@ -34,6 +36,7 @@ Rodonacelnik begin
 
         Vladar begin
             VukanImeID "vukan" "Ime:" "Vukan"
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg"
             titula begin
                 VukanTitulaID
                 "titula"
@@ -51,6 +54,7 @@ Rodonacelnik begin
 
         Vladar begin
             StefanPrvovencaniImeID "stefanPrvovencani" "Ime:" "Stefan Prvovencani"
+            "http://fakti.org/sites/default/files/2016-1/01.jpg"
             titula begin
                 StefanPrvovencaniTitulaID
                 "titula"
@@ -68,6 +72,7 @@ Rodonacelnik begin
 
         Vladar begin
             RastkoImeID "rastko" "Ime:" "Rastko"
+            "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif"
             titula begin
                 RastkoTitulaID
                 "titula"
@@ -86,6 +91,7 @@ Rodonacelnik begin
 
     Vladar begin
         TihomirImeID "tihomir" "Ime:" "Tihomir"
+        ""
         titula begin
             StefanNemanjaTitulaID
             "titula"
@@ -103,6 +109,7 @@ Rodonacelnik begin
 
     Vladar begin
         StracimirImeID "stracimir" "Ime:" "Stracimir"
+        ""
         titula begin
             StefanNemanjaTitulaID
             "titula"
@@ -120,6 +127,7 @@ Rodonacelnik begin
 
     Vladar begin
         MiroslavImeID "miroslav" "Ime:" "Miroslav"
+        ""
         titula begin
             StefanNemanjaTitulaID
             "titula"

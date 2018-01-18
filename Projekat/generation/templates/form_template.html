@@ -24,6 +24,7 @@
                             titula:    "{{titulaR.tip}},{{titulaR.teritorija.nazivTeritorije}},{{titulaR.teritorija.pocetakVladavine.value}} - {{titulaR.teritorija.krajVladavine.value}} ",
                             {%endfor%}
                      },
+                     image: "{{rodoslov.rodonacelnik.slika}}",
                     children: [
                         {% for vladar in rodoslov.rodonacelnik.potomci %}
                         {
@@ -32,6 +33,7 @@
                                     titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
                                     {% endfor %}
                              },
+                            image: "{{vladar.slika}}",
                             children:[
                                 {% for vladar1 in vladar.potomci %}
                                     {
@@ -40,6 +42,7 @@
                                                     titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
                                                 {% endfor %}
                                          },
+                                         image: "{{vladar1.slika}}",
                                     },
                                 {% endfor %}
                             ]
