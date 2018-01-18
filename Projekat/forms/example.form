@@ -1,12 +1,40 @@
 rodoslov "Nemanjici"
 
 Rodonacelnik begin
-     ime ime "ime:"  "Zavida"
-     titula begin car
-        teritorija "Srbija"
-        pocetakVladavine pocetak 1234
-        -
-        krajVladavine kraj 1222
+     ZavidaImeID "zavida" "Ime:" "Zavida"
+     titula begin
+        ZavidaTitulaID
+        "titula"
+        "Titula:"
+        car
+        teritorija begin
+            ZavidaTeriorijaID
+            "Teritorija:"
+            "Srbija"
+            pocetakVladavine ZavidaPocetakID "pocetak" "Pocetak vladavine:" 1234
+            krajVladavine ZavidaKrajID "kraj" "Kraj vladavine:" 1222
+        teritorija end
      titula end
+
+     "Tihomir" "Stracimir" "Miroslav" "Stefan Nemanja"
 Rodonacelnik end
 
+Vladar begin
+    StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
+    titula begin
+        StefanNemanjaTitulaID
+        "titula"
+        "Titula:"
+        veliki zupan
+        teritorija begin
+            StefanNemanjaTeriorijaID
+            "Teritorija:"
+            "Raska"
+            pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
+            krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+        teritorija end
+    titula end
+
+    "Zavida"
+    "Vukan" "Stefan Prvovencani" "Rastko"
+Vladar end
