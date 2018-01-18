@@ -11,55 +11,55 @@
     edge[dir=black,arrowtail=empty]
 
 
-1790077116600[ label="{Ime|+id:ID\l+name:STRING\l+label:STRING\l+value:STRING\l}"]
+1777556235112 -> 1777556268152[arrowtail=diamond, dir=both, headlabel="ime "]
+1777556235112 -> 1777556250216[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+1777556235112[ label="{Rodonacelnik|potomci:list[STRING]\l}"]
 
-1790077125096[ label="{TitulaType|veliki zupan\|kralj\|car\|carica\|kneginja}"]
+1777556250216 -> 1777556271928[arrowtail=diamond, dir=both, headlabel="teritorija "]
+1777556250216[ label="{Titula|+id:ID\l+name:STRING\l+label:STRING\l+tip:TitulaType\l}"]
 
-1790077129816[ label="{PocetakVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
+1777556236056 -> 1777556268152[arrowtail=diamond, dir=both, headlabel="ime "]
+1777556236056 -> 1777556250216[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+1777556236056[ label="{Vladar|+predak:STRING\lpotomci:list[STRING]\l}"]
 
-1790077127928 -> 1790077116600[arrowtail=diamond, dir=both, headlabel="ime "]
-1790077127928 -> 1790077133592[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-1790077127928[ label="{Vladar|+predak:STRING\lpotomci:list[STRING]\l}"]
+1777556267208[ label="{PocetakVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
 
-1790077133592 -> 1790077128872[arrowtail=diamond, dir=both, headlabel="teritorija "]
-1790077133592[ label="{Titula|+id:ID\l+name:STRING\l+label:STRING\l+tip:TitulaType\l}"]
+1777556275704[ label="{KrajVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
 
-1790077126040[ label="{KrajVladavine|+id:ID\l+name:STRING\l+label:STRING\l+value:INT\l}"]
+1777556264376 -> 1777556235112[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
+1777556264376 -> 1777556236056[arrowtail=diamond, dir=both, headlabel="vladari 1..*"]
+1777556264376[ label="{Rodoslov|+title:STRING\l}"]
 
-1790077137368 -> 1790077117544[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
-1790077137368 -> 1790077127928[arrowtail=diamond, dir=both, headlabel="vladari 1..*"]
-1790077137368[ label="{Rodoslov|+title:STRING\l}"]
+1777556268152[ label="{Ime|+id:ID\l+name:STRING\l+label:STRING\l+value:STRING\l}"]
 
-1790077128872 -> 1790077129816[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
-1790077128872 -> 1790077126040[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
-1790077128872[ label="{Teritorija|+id:ID\l+label:STRING\l+nazivTeritorije:STRING\l}"]
+1777556237944[ label="{TitulaType|veliki zupan\|kralj\|car\|carica\|kneginja}"]
 
-1790077117544 -> 1790077116600[arrowtail=diamond, dir=both, headlabel="ime "]
-1790077117544 -> 1790077133592[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-1790077117544[ label="{Rodonacelnik|potomci:list[STRING]\l}"]
+1777556271928 -> 1777556267208[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
+1777556271928 -> 1777556275704[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
+1777556271928[ label="{Teritorija|+id:ID\l+label:STRING\l+nazivTeritorije:STRING\l}"]
 
-1790077099608[ label="{ID|}"]
+1777556241720[ label="{ID|}"]
 
-1790077113768[ label="{*OBJECT|}"]
-1790077113768 -> 1790077136424 [dir=back]
+1777556262488[ label="{*OBJECT|}"]
+1777556262488 -> 1777556261544 [dir=back]
 
-1790077090168[ label="{STRING|}"]
+1777556256824[ label="{INT|}"]
 
-1790077136424[ label="{BASETYPE|}"]
-1790077136424 -> 1790077097720 [dir=back]
-1790077136424 -> 1790077100552 [dir=back]
-1790077136424 -> 1790077099608 [dir=back]
-1790077136424 -> 1790077090168 [dir=back]
+1777556252104[ label="{STRING|}"]
 
-1790077097720[ label="{NUMBER|}"]
-1790077097720 -> 1790077096776 [dir=back]
-1790077097720 -> 1790077088280 [dir=back]
+1777556246440[ label="{FLOAT|}"]
 
-1790077088280[ label="{INT|}"]
+1777556248328[ label="{BOOL|}"]
 
-1790077096776[ label="{FLOAT|}"]
+1777556261544[ label="{BASETYPE|}"]
+1777556261544 -> 1777556238888 [dir=back]
+1777556261544 -> 1777556248328 [dir=back]
+1777556261544 -> 1777556241720 [dir=back]
+1777556261544 -> 1777556252104 [dir=back]
 
-1790077100552[ label="{BOOL|}"]
+1777556238888[ label="{NUMBER|}"]
+1777556238888 -> 1777556246440 [dir=back]
+1777556238888 -> 1777556256824 [dir=back]
 
 
 }

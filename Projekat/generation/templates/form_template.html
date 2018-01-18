@@ -19,34 +19,18 @@
                 },
 
                 nodeStructure: {
-                    text: { name: "{{rodoslov.rodonacelnik.ime.label}}" },
-                    image: "http://flat-icon-design.com/f/f_business_28/s256_f_business_28_0bg.png",
+                    text: { name: "{{rodoslov.rodonacelnik.ime.value}}" },
                     children: [
+                        {% for potomak in rodoslov.rodonacelnik.potomci %}
                         {
-                            image: "http://flat-icon-design.com/f/f_object_167/s256_f_object_167_0bg.png"
+                            text: { name: "{{potomak}}" },
                         },
-                        {
-                            image: "http://flat-icon-design.com/f/f_object_80/s256_f_object_80_0bg.png",
-                                children: [
-                                    {
-                                        image: "http://flat-icon-design.com/f/f_object_78/s256_f_object_78_0bg.png"
-                                    },
-                                    {
-                                        image: "http://flat-icon-design.com/f/f_object_114/s256_f_object_114_0bg.png",
-                                            children: [
-                                                {
-                                                    image: "http://flat-icon-design.com/f/f_object_67/s256_f_object_67_0bg.png"
-                                                }
-                                            ]
-                                    }
-                                ]
-                        }
+                        {% endfor %}
                     ]
                 }
             };
 
             var my_chart = new Treant(simple_chart_config);
-
         </script>
     </body>
 </html>
