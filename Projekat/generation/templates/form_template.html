@@ -10,8 +10,8 @@
     </head>
 
     <body>
-        <p>{{rodoslov.title}}</p><br/><br/>
-        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
+        <h1 align="center">{{rodoslov.title}}</h1><br/><br/>
+        <div id="tree-simple" style="height: 400px; margin: 5px; width: 2000px;"> </div>
         <script>
             simple_chart_config = {
                 chart: {
@@ -54,5 +54,11 @@
 
             var my_chart = new Treant(simple_chart_config);
         </script>
+
+
+    <form action="/action_page.php">
+        Ime: <input type="text" name="fname"><br>
+                    <input type="submit" value="Submit">
+    </form>
     </body>
 </html>
