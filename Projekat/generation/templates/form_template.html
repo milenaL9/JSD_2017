@@ -21,9 +21,17 @@
                 nodeStructure: {
                     text: { name: "{{rodoslov.rodonacelnik.ime.value}}" },
                     children: [
-                        {% for potomak in rodoslov.rodonacelnik.potomci %}
+                        {% for vladar in rodoslov.rodonacelnik.potomci %}
                         {
-                            text: { name: "{{potomak}}" },
+                            text: { name: "{{vladar.ime.value}}" },
+                            children:[
+                                {% for vladar1 in vladar.potomci %}
+                                    {
+                                        text: { name: "{{vladar1.ime.value}}" },
+
+                                    },
+                                {% endfor %}
+                            ]
                         },
                         {% endfor %}
                     ]

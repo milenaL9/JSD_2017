@@ -2,14 +2,13 @@ Rodoslov:
     "rodoslov"
     title = STRING
     rodonacelnik = Rodonacelnik
-    vladari += Vladar
 ;
 
 Rodonacelnik:
     "Rodonacelnik" "begin"
     ime = Ime
     titule += Titula
-    potomci *= STRING
+    potomci *= Vladar
     "Rodonacelnik" "end"
 ;
 
@@ -17,8 +16,7 @@ Vladar:
     "Vladar" "begin"
     ime = Ime
     titule += Titula
-    predak = STRING
-    potomci *= STRING
+    potomci *= Vladar
     "Vladar" "end"
 ;
 
@@ -37,7 +35,7 @@ Titula:
 ;
 
 TitulaType:
-    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'
+    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'
 ;
 
 Teritorija:

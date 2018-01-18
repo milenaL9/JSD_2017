@@ -16,25 +16,123 @@ Rodonacelnik begin
         teritorija end
      titula end
 
-     "Tihomir" "Stracimir" "Miroslav" "Stefan Nemanja"
+    Vladar begin
+        StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
+        titula begin
+            StefanNemanjaTitulaID
+            "titula"
+            "Titula:"
+            veliki zupan
+            teritorija begin
+                StefanNemanjaTeriorijaID
+                "Teritorija:"
+                "Raska"
+                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
+                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+            teritorija end
+        titula end
+
+        Vladar begin
+            VukanImeID "vukan" "Ime:" "Vukan"
+            titula begin
+                VukanTitulaID
+                "titula"
+                "Titula:"
+                veliki zupan
+                teritorija begin
+                    VukanTeriorijaID
+                    "Teritorija:"
+                    "Raska"
+                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1202
+                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1207
+                teritorija end
+            titula end
+        Vladar end
+
+        Vladar begin
+            StefanPrvovencaniImeID "stefanPrvovencani" "Ime:" "Stefan Prvovencani"
+            titula begin
+                StefanPrvovencaniTitulaID
+                "titula"
+                "Titula:"
+                veliki zupan
+                teritorija begin
+                    StefanPrvovencaniTeriorijaID
+                    "Teritorija:"
+                    "Zeta"
+                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1196
+                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1217
+                teritorija end
+            titula end
+        Vladar end
+
+        Vladar begin
+            RastkoImeID "rastko" "Ime:" "Rastko"
+            titula begin
+                RastkoTitulaID
+                "titula"
+                "Titula:"
+                arhiepiskop
+                teritorija begin
+                    RastkoTeriorijaID
+                    "Teritorija:"
+                    "Srbija"
+                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1175
+                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1236
+                teritorija end
+            titula end
+        Vladar end
+    Vladar end
+
+    Vladar begin
+        TihomirImeID "tihomir" "Ime:" "Tihomir"
+        titula begin
+            StefanNemanjaTitulaID
+            "titula"
+            "Titula:"
+            veliki zupan
+            teritorija begin
+                StefanNemanjaTeriorijaID
+                "Teritorija:"
+                "Raska"
+                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
+                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+            teritorija end
+        titula end
+    Vladar end
+
+    Vladar begin
+        StracimirImeID "stracimir" "Ime:" "Stracimir"
+        titula begin
+            StefanNemanjaTitulaID
+            "titula"
+            "Titula:"
+            veliki zupan
+            teritorija begin
+                StefanNemanjaTeriorijaID
+                "Teritorija:"
+                "Raska"
+                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
+                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+            teritorija end
+        titula end
+    Vladar end
+
+    Vladar begin
+        MiroslavImeID "miroslav" "Ime:" "Miroslav"
+        titula begin
+            StefanNemanjaTitulaID
+            "titula"
+            "Titula:"
+            veliki zupan
+            teritorija begin
+                StefanNemanjaTeriorijaID
+                "Teritorija:"
+                "Raska"
+                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
+                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+            teritorija end
+        titula end
+    Vladar end
 Rodonacelnik end
 
-Vladar begin
-    StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
-    titula begin
-        StefanNemanjaTitulaID
-        "titula"
-        "Titula:"
-        veliki zupan
-        teritorija begin
-            StefanNemanjaTeriorijaID
-            "Teritorija:"
-            "Raska"
-            pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
-            krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
-        teritorija end
-    titula end
-
-    "Zavida"
-    "Vukan" "Stefan Prvovencani" "Rastko"
-Vladar end
