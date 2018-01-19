@@ -1,146 +1,165 @@
 rodoslov "Nemanjici"
 
-Rodonacelnik begin
+Rodonacelnik {
      ZavidaImeID "zavida" "Ime:" "Zavida"
      ""
-     titula begin
+     titula {
         ZavidaTitulaID
         "titula"
         "Titula:"
         car
-        teritorija begin
+        teritorija {
             ZavidaTeriorijaID
             "Teritorija:"
             "Srbija"
             pocetakVladavine ZavidaPocetakID "pocetak" "Pocetak vladavine:" 1234
             krajVladavine ZavidaKrajID "kraj" "Kraj vladavine:" 1222
-        teritorija end
-     titula end
+        teritorija }
+     titula }
 
-    Vladar begin
+    Vladar {
         StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
-        "https://ucibibapl.files.wordpress.com/2014/03/stefan-nemanja1.jpg"
-        titula begin
+        "https://ucibizbapl.files.wordpress.com/2014/03/stefan-nemanja1.jpg"
+        titula {
             StefanNemanjaTitulaID
             "titula"
             "Titula:"
             veliki zupan
-            teritorija begin
+            teritorija {
                 StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
                 pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
                 krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
-            teritorija end
-        titula end
+            teritorija }
+        titula }
 
-        Vladar begin
+        Vladar {
             VukanImeID "vukan" "Ime:" "Vukan"
             "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg"
-            titula begin
+            titula {
                 VukanTitulaID
                 "titula"
                 "Titula:"
                 veliki zupan
-                teritorija begin
+                teritorija {
                     VukanTeriorijaID
                     "Teritorija:"
                     "Raska"
                     pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1202
                     krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1207
-                teritorija end
-            titula end
-        Vladar end
+                teritorija }
+            titula }
+             Vladar {
+                DmitarImeID "Dmitar" "Ime:" "Dmitar"
+                ""
+                titula {
+                    DmitarTitulaID
+                    "titula"
+                    "Titula:"
+                    veliki zupan
+                    teritorija {
+                        DmitarTeriorijaID
+                        "Teritorija:"
+                        ""
+                        pocetakVladavine DmitarPocetakID "pocetak" "Pocetak vladavine:" 0
+                        krajVladavine DmitarKrajID "kraj" "Kraj vladavine:" 0
+                    teritorija }
+                titula }
+            Vladar }
 
-        Vladar begin
+
+        Vladar }
+
+        Vladar {
             StefanPrvovencaniImeID "stefanPrvovencani" "Ime:" "Stefan Prvovencani"
             "http://fakti.org/sites/default/files/2016-1/01.jpg"
-            titula begin
+            titula {
                 StefanPrvovencaniTitulaID
                 "titula"
                 "Titula:"
                 veliki zupan
-                teritorija begin
+                teritorija {
                     StefanPrvovencaniTeriorijaID
                     "Teritorija:"
                     "Zeta"
                     pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1196
                     krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1217
-                teritorija end
-            titula end
-        Vladar end
+                teritorija }
+            titula }
+        Vladar }
 
-        Vladar begin
+        Vladar {
             RastkoImeID "rastko" "Ime:" "Rastko"
             "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif"
-            titula begin
+            titula {
                 RastkoTitulaID
                 "titula"
                 "Titula:"
                 arhiepiskop
-                teritorija begin
+                teritorija {
                     RastkoTeriorijaID
                     "Teritorija:"
                     "Srbija"
                     pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1175
                     krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1236
-                teritorija end
-            titula end
-        Vladar end
-    Vladar end
+                teritorija }
+            titula }
+        Vladar }
+    Vladar }
 
-    Vladar begin
+    Vladar {
         TihomirImeID "tihomir" "Ime:" "Tihomir"
         ""
-        titula begin
+        titula {
             StefanNemanjaTitulaID
             "titula"
             "Titula:"
             veliki zupan
-            teritorija begin
+            teritorija {
                 StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
                 pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
                 krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
-            teritorija end
-        titula end
-    Vladar end
+            teritorija }
+        titula }
+    Vladar }
 
-    Vladar begin
+    Vladar {
         StracimirImeID "stracimir" "Ime:" "Stracimir"
         ""
-        titula begin
+        titula {
             StefanNemanjaTitulaID
             "titula"
             "Titula:"
             veliki zupan
-            teritorija begin
+            teritorija {
                 StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
                 pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
                 krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
-            teritorija end
-        titula end
-    Vladar end
+            teritorija }
+        titula }
+    Vladar }
 
-    Vladar begin
+    Vladar {
         MiroslavImeID "miroslav" "Ime:" "Miroslav"
         ""
-        titula begin
+        titula {
             StefanNemanjaTitulaID
             "titula"
             "Titula:"
             veliki zupan
-            teritorija begin
+            teritorija {
                 StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
                 pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
                 krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
-            teritorija end
-        titula end
-    Vladar end
-Rodonacelnik end
+            teritorija }
+        titula }
+    Vladar }
+Rodonacelnik }
 

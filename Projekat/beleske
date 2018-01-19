@@ -36,3 +36,8 @@
             <input name = "{{potomakV}}" value="{{potomakV}}" /><br/><br/>
                 {% endfor %}
             {% endfor %}
+
+
+
+BEGING i END prepraviti na POCETAK i KRAJ ili staviti {}
+Da korisnik definise TitulaType, i posle kad bude koristio da se proveri da li je dobro uneo(da ne unese nesto sto ne postoji)

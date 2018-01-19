@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <h1 align="center">{{rodoslov.title}}</h1><br/><br/>
+        <h1 align="center">{{rodoslov.naslov}}</h1><br/><br/>
         <div id="tree-simple" style="height: 400px; margin: 5px; width: 2000px;"> </div>
         <script>
             simple_chart_config = {
@@ -19,30 +19,55 @@
                 },
 
                 nodeStructure: {
-                    text: { name: "{{rodoslov.rodonacelnik.ime.value}}",
+                    text: { name: "{{rodoslov.rodonacelnik.ime.vrednost}}",
                             {% for titulaR in rodoslov.rodonacelnik.titule %}
-                            titula:    "{{titulaR.tip}},{{titulaR.teritorija.nazivTeritorije}},{{titulaR.teritorija.pocetakVladavine.value}} - {{titulaR.teritorija.krajVladavine.value}} ",
+                            titula:    "{{titulaR.tip}},{{titulaR.teritorija.nazivTeritorije}},{{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}} ",
                             {%endfor%}
                      },
                      image: "{{rodoslov.rodonacelnik.slika}}",
                     children: [
                         {% for vladar in rodoslov.rodonacelnik.potomci %}
                         {
-                            text: { name: "{{vladar.ime.value}}",
+                            text: { name: "{{vladar.ime.vrednost}}",
                                     {% for titulaV in vladar.titule %}
-                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
+                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.vrednost}}-{{titulaV.teritorija.krajVladavine.vrednost}}",
                                     {% endfor %}
                              },
                             image: "{{vladar.slika}}",
                             children:[
                                 {% for vladar1 in vladar.potomci %}
                                     {
-                                        text: { name: "{{vladar1.ime.value}}",
+                                        text: { name: "{{vladar1.ime.vrednost}}",
                                                 {% for titulaV in vladar1.titule %}
-                                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.value}}-{{titulaV.teritorija.krajVladavine.value}}",
+                                                    titula: "{{titulaV.tip}}, {{titulaV.teritorija.nazivTeritorije}},{{titulaV.teritorija.pocetakVladavine.vrednost}}-{{titulaV.teritorija.krajVladavine.vrednost}}",
                                                 {% endfor %}
                                          },
                                          image: "{{vladar1.slika}}",
+                                          children:[
+                                                {% for vladar2 in vladar1.potomci %}
+                                                    {
+                                                        text: { name: "{{vladar2.ime.vrednost}}",
+                                                                {% for titulaV2 in vladar2.titule %}
+                                                                    titula: "{{titulaV2.tip}}, {{titulaV2.teritorija.nazivTeritorije}},{{titulaV2.teritorija.pocetakVladavine.vrednost}}-{{titulaV2.teritorija.krajVladavine.vrednost}}",
+                                                                {% endfor %}
+                                                         },
+                                                        image: "{{vladar2.slika}}",
+                                                        children:[
+                                                            {% for vladar3 in vladar2.potomci %}
+                                                                {
+                                                                    text: { name: "{{vladar3.ime.vrednost}}",
+                                                                            {% for titulaV3 in vladar3.titule %}
+                                                                                titula: "{{titulaV3.tip}}, {{titulaV3.teritorija.nazivTeritorije}},{{titulaV3.teritorija.pocetakVladavine.vrednost}}-{{titulaV3.teritorija.krajVladavine.vrednost}}",
+                                                                            {% endfor %}
+                                                                     },
+                                                                     image: "{{vladar3.slika}}",
+
+                                                                },
+                                                            {% endfor %}
+                                                        ]
+                                                    },
+                                                {% endfor %}
+                                            ]
                                     },
                                 {% endfor %}
                             ]
@@ -54,11 +79,5 @@
 
             var my_chart = new Treant(simple_chart_config);
         </script>
-
-
-    <form action="/action_page.php">
-        Ime: <input type="text" name="fname"><br>
-                    <input type="submit" value="Submit">
-    </form>
     </body>
 </html>

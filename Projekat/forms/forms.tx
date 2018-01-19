@@ -1,59 +1,59 @@
 Rodoslov:
     "rodoslov"
-    title = STRING
+    naslov = STRING
     rodonacelnik = Rodonacelnik
 ;
 
 Rodonacelnik:
-    "Rodonacelnik" "begin"
+    "Rodonacelnik" "{"
     ime = Ime
     slika = STRING
     titule += Titula
     potomci *= Vladar
-    "Rodonacelnik" "end"
+    "Rodonacelnik" "}"
 ;
 
 Vladar:
-    "Vladar" "begin"
+    "Vladar" "{"
     ime = Ime
     slika = STRING
     titule += Titula
     potomci *= Vladar
-    "Vladar" "end"
+    "Vladar" "}"
 ;
 
 Ime:
-    id = ID name = STRING label = STRING value = STRING
+    id = ID naziv = STRING labela = STRING vrednost = STRING
 ;
 
 Titula:
-    "titula" "begin"
+    "titula" "{"
     id = ID
-    name = STRING
-    label = STRING
-    tip = TitulaType
+    naziv = STRING
+    labela = STRING
+    tip = TitulaTip
     teritorija=Teritorija
-    "titula" "end"
+    "titula" "}"
 ;
 
-TitulaType:
-    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'
+TitulaTip:
+    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'|'nema'
 ;
 
 Teritorija:
-    "teritorija" "begin"
+    "teritorija" "{"
     id = ID
-    label = STRING
+    labela = STRING
     nazivTeritorije = STRING
     pocetakVladavine = PocetakVladavine
     krajVladavine = KrajVladavine
-    "teritorija" "end"
+    "teritorija" "}"
 ;
 
 PocetakVladavine:
-    "pocetakVladavine" id = ID name = STRING label = STRING value = INT
+    "pocetakVladavine" id = ID naziv = STRING labela = STRING vrednost = INT
 ;
 
 KrajVladavine:
-    "krajVladavine" id = ID name = STRING label = STRING value = INT
+    "krajVladavine" id = ID naziv = STRING labela = STRING vrednost = INT
 ;
