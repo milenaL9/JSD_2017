@@ -66,9 +66,24 @@ Rodonacelnik {
                         krajVladavine DmitarKrajID "kraj" "Kraj vladavine:" 0
                     teritorija }
                 titula }
+                Vladar {
+                    VratislavImeID "Vratislav" "Ime:" "Vratislav"
+                    ""
+                    titula {
+                        VratislavTitulaID
+                        "titula"
+                        "Titula:"
+                        veliki zupan
+                        teritorija {
+                            VratislavTeriorijaID
+                            "Teritorija:"
+                            ""
+                            pocetakVladavine VratislavPocetakID "pocetak" "Pocetak vladavine:" 0
+                            krajVladavine VratislavKrajID "kraj" "Kraj vladavine:" 0
+                        teritorija }
+                    titula }
+                Vladar }
             Vladar }
-
-
         Vladar }
 
         Vladar {

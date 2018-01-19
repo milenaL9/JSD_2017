@@ -11,7 +11,7 @@
 
     <body>
         <h1 align="center">{{rodoslov.naslov}}</h1><br/><br/>
-        <div id="tree-simple" style="height: 400px; margin: 5px; width: 2000px;"> </div>
+        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
         <script>
             simple_chart_config = {
                 chart: {
@@ -61,7 +61,16 @@
                                                                             {% endfor %}
                                                                      },
                                                                      image: "{{vladar3.slika}}",
-
+                                                                    children:[
+                                                                        {% for vladar4 in vladar3.potomci %}
+                                                                            text: { name: "{{vladar4.ime.vrednost}}",
+                                                                            {% for titulaV4 in vladar4.titule %}
+                                                                                titula: "{{titulaV4.tip}}, {{titulaV4.teritorija.nazivTeritorije}},{{titulaV4.teritorija.pocetakVladavine.vrednost}}-{{titulaV4.teritorija.krajVladavine.vrednost}}",
+                                                                            {% endfor %}
+                                                                            },
+                                                                            image: "{{vladar4.slika}}",
+                                                                        {% endfor %}
+                                                                    ]
                                                                 },
                                                             {% endfor %}
                                                         ]
