@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Rodoslov</title>
-        <link rel="stylesheet" type="text/css" href="Treant.css">
+        <link rel="stylesheet" type="text/css" href="Tree.css">
         <script src="Treant.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
                  integrity="sha256-MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA="
@@ -20,7 +20,7 @@
 
                 nodeStructure: {
                     text: { name: "Zavida",
-                            titula: "car, Srbija   (1234 - 1222) ",
+                                titula: "car, Srbija   (1234 - 1222) ",
                      },
                      image: "",
                     children: [
@@ -74,6 +74,46 @@
                                          },
                                          image: "http://fakti.org/sites/default/files/2016-1/01.jpg",
                                           children:[
+                                                    {
+                                                        text: { name: "Radoslav",
+                                                                    titula: "kralj, Srbija    (1228 - 1234) ",
+                                                         },
+                                                        image: "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg",
+                                                        children:[
+                                                        ]
+                                                    },
+                                                    {
+                                                        text: { name: "Vladislav",
+                                                                    titula: "kralj, Srbija    (1234 - 1243) ",
+                                                         },
+                                                        image: "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg",
+                                                        children:[
+                                                                {
+                                                                    text: { name: "Stefan",
+                                                                                titula: "nema ",
+                                                                     },
+                                                                     image: "",
+                                                                    children:[
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    text: { name: "Desa",
+                                                                                titula: "nema ",
+                                                                     },
+                                                                     image: "",
+                                                                    children:[
+                                                                    ]
+                                                                },
+                                                        ]
+                                                    },
+                                                    {
+                                                        text: { name: "Uros I",
+                                                                    titula: "kralj, Srbija    (1243 - 1276) ",
+                                                         },
+                                                        image: "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg",
+                                                        children:[
+                                                        ]
+                                                    },
                                             ]
                                     },
                                     {
@@ -113,7 +153,6 @@
                     ]
                 }
             };
-
             var my_chart = new Treant(simple_chart_config);
         </script>
     </body>

@@ -1,43 +1,19 @@
-        <label for = "{{rodoslov.rodonacelnik.ime.id}}">{{rodoslov.rodonacelnik.ime.label}}</label>
-            <input name = "{{rodoslov.rodonacelnik.ime.name}}" id = "{{rodoslov.rodonacelnik.ime.id}}" value="{{rodoslov.rodonacelnik.ime.value}}" /><br/><br/>
-            {% for titula in rodoslov.rodonacelnik.titule %}
-            <label for = "{{titula.id}}">{{titula.label}}</label>
-            <input name = "{{titula.name}}" id="{{titula.id}}" value="{{titula.tip}}" /><br/><br/>
-            <label for = "{{titula.teritorija.id}}">{{titula.teritorija.label}}</label>
-            <input name = "{{titula.teritorija.nazivTeritorije}}" id="{{titula.teritorija.id}}" value="{{titula.teritorija.nazivTeritorije}}" /><br/><br/>
-            <label for = "{{titula.teritorija.pocetakVladavine.id}}">{{titula.teritorija.pocetakVladavine.label}}</label>
-            <input name = "{{titula.teritorija.pocetakVladavine.name}}" id="{{titula.teritorija.pocetakVladavine.id}}" value="{{titula.teritorija.pocetakVladavine.value}}" /><br/><br/>
-            <label for = "{{titula.teritorija.krajVladavine.id}}">{{titula.teritorija.krajVladavine.label}}</label>
-            <input name = "{{titula.teritorija.krajVladavine.name}}" id="{{titula.teritorija.krajVladavine.id}}" value="{{titula.teritorija.krajVladavine.value}}" /><br/><br/>
-            {% endfor %}
-            <label for = "potomci">Potomci:</label><br/><br/>
-            {% for potomak in rodoslov.rodonacelnik.potomci %}
-            <input name = "{{potomak}}" value="{{potomak}}" /><br/><br/>
-            {% endfor %}
+/* optional Container STYLES */
+.chart { height: 400px; width: 900px; margin: 5px; margin: 5px auto; border: 3px solid #DDD; border-radius: 3px; }
+.node { color: #9CB5ED; border: 2px solid #C8C8C8; border-radius: 3px; background: #fff; transition: background 0.7s, color 0.7s; }
+.node p { font-size: 17px; line-height: 20px; height: 20px; font-weight: bold; padding: 3px; margin: 0; }
 
-            <br/><br/><label for = "vladari">Vladari:</label><br/><br/>
-            {% for vladar in rodoslov.vladari %}
-            <label for = "{{vladar.ime.id}}">{{vladar.ime.label}}</label>
-            <input name = "{{vladar.ime.name}}" id="{{vladar.ime.id}}" value="{{vladar.ime.value}}" /><br/><br/>
-                {% for titulaV in vladar.titule %}
-            <label for = "{{titulaV.id}}">{{titulaV.label}}</label>
-            <input name = "{{titulaV.name}}" id="{{titulaV.id}}" value="{{titulaV.tip}}" /><br/><br/>
-            <label for = "{{titulaV.teritorija.id}}">{{titulaV.teritorija.label}}</label>
-            <input name = "{{titulaV.teritorija.nazivTeritorije}}" id="{{titulaV.teritorija.id}}" value="{{titulaV.teritorija.nazivTeritorije}}" /><br/><br/>
-            <label for = "{{titulaV.teritorija.pocetakVladavine.id}}">{{titulaV.teritorija.pocetakVladavine.label}}</label>
-            <input name = "{{titulaV.teritorija.pocetakVladavine.name}}" id="{{titulaV.teritorija.pocetakVladavine.id}}" value="{{titulaV.teritorija.pocetakVladavine.value}}" /><br/><br/>
-            <label for = "{{titulaV.teritorija.krajVladavine.id}}">{{titulaV.teritorija.krajVladavine.label}}</label>
-            <input name = "{{titulaV.teritorija.krajVladavine.name}}" id="{{titulaV.teritorija.krajVladavine.id}}" value="{{titulaV.teritorija.krajVladavine.value}}" /><br/><br/>
-                {% endfor %}
-            <label for = "predak">Predak:</label>
-            <input name = "{{vladar.predak}}" value="{{vladar.predak}}" /><br/><br/>
-            <label for = "potomci">Potomci:</label><br/><br/>
-                {% for potomakV in vladar.potomci %}
-            <input name = "{{potomakV}}" value="{{potomakV}}" /><br/><br/>
-                {% endfor %}
-            {% endfor %}
+.node.main-date { width: 10px; height: 10px; border-radius: 50%; }
+.node.main-date p.node-name { top: -15px; font-size: 15px; position: absolute; opacity: 0; z-index: -1; left: -30px; transition: top 1s, opacity 1s; }
+.node.main-date:hover p.node-name { opacity: 1; top: -25px; }
+
+.Treant .collapse-switch { width: 100%; height: 100%; border: none; }
+.Treant .node.collapsed { background-color: #D7F5FF; color: #827A7A; }
+.Treant .node.collapsed .collapse-switch { background: none; }
+
+.timeline .node-desc { position: absolute; left: -999px; width: 2000px; background: #665B57; height: 3px; padding: 0; z-index: -1; top: 3px; }
 
 
 
-BEGING i END prepraviti na POCETAK i KRAJ ili staviti {}
+
 Da korisnik definise TitulaType, i posle kad bude koristio da se proveri da li je dobro uneo(da ne unese nesto sto ne postoji)

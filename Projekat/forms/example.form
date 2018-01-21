@@ -112,6 +112,76 @@ Rodonacelnik {
                     krajVladavine "Kraj vladavine:" 1217
                 teritorija }
             titula }
+            Vladar {
+                "Ime:" "Radoslav"
+                "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg"
+                titula {
+                    "Titula:"
+                    kralj
+                    teritorija {
+                        "Teritorija:"
+                        "Srbija"
+                        pocetakVladavine "Pocetak vladavine:" 1228
+                        krajVladavine "Kraj vladavine:" 1234
+                    teritorija }
+                titula }
+            Vladar }
+            Vladar {
+                "Ime:" "Vladislav"
+                "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg"
+                titula {
+                    "Titula:"
+                    kralj
+                    teritorija {
+                        "Teritorija:"
+                        "Srbija"
+                        pocetakVladavine "Pocetak vladavine:" 1234
+                        krajVladavine "Kraj vladavine:" 1243
+                    teritorija }
+                titula }
+                Vladar {
+                    "Ime:" "Stefan"
+                    ""
+                    titula {
+                        "Titula:"
+                        nema
+                        teritorija {
+                            "Teritorija:"
+                            ""
+                            pocetakVladavine "Pocetak vladavine:" 0
+                            krajVladavine "Kraj vladavine:" 0
+                        teritorija }
+                    titula }
+                Vladar }
+               Vladar {
+                    "Ime:" "Desa"
+                    ""
+                    titula {
+                        "Titula:"
+                        nema
+                        teritorija {
+                            "Teritorija:"
+                            ""
+                            pocetakVladavine "Pocetak vladavine:" 0
+                            krajVladavine "Kraj vladavine:" 0
+                        teritorija }
+                    titula }
+               Vladar }
+            Vladar }
+            Vladar{
+                "Ime:" "Uros I"
+                "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg"
+                titula {
+                    "Titula:"
+                    kralj
+                    teritorija {
+                        "Teritorija:"
+                        "Srbija"
+                        pocetakVladavine "Pocetak vladavine:" 1243
+                        krajVladavine "Kraj vladavine:" 1276
+                    teritorija }
+                titula }
+            Vladar }
         Vladar }
 
         Vladar {
