@@ -23,13 +23,11 @@ Vladar:
 ;
 
 Ime:
-    id = ID naziv = STRING labela = STRING vrednost = STRING
+    labela = STRING vrednost = STRING
 ;
 
 Titula:
     "titula" "{"
-    id = ID
-    naziv = STRING
     labela = STRING
     tip = TitulaTip
     teritorija=Teritorija
@@ -42,18 +40,17 @@ TitulaTip:
 
 Teritorija:
     "teritorija" "{"
-    id = ID
     labela = STRING
-    nazivTeritorije = STRING
+    naziv = STRING
     pocetakVladavine = PocetakVladavine
     krajVladavine = KrajVladavine
     "teritorija" "}"
 ;
 
 PocetakVladavine:
-    "pocetakVladavine" id = ID naziv = STRING labela = STRING vrednost = INT
+    "pocetakVladavine" labela = STRING vrednost = INT
 ;
 
 KrajVladavine:
-    "krajVladavine" id = ID naziv = STRING labela = STRING vrednost = INT
+    "krajVladavine" labela = STRING vrednost = INT
 ;

@@ -1,178 +1,176 @@
 rodoslov "Nemanjici"
 
 Rodonacelnik {
-     ZavidaImeID "zavida" "Ime:" "Zavida"
+     "Ime:" "Zavida"
      ""
      titula {
-        ZavidaTitulaID
-        "titula"
         "Titula:"
         car
         teritorija {
-            ZavidaTeriorijaID
             "Teritorija:"
             "Srbija"
-            pocetakVladavine ZavidaPocetakID "pocetak" "Pocetak vladavine:" 1234
-            krajVladavine ZavidaKrajID "kraj" "Kraj vladavine:" 1222
+            pocetakVladavine "Od:" 1234
+            krajVladavine "Do:" 1222
         teritorija }
      titula }
 
     Vladar {
-        StefanNemanjaImeID "stefanNemanja" "Ime:" "Stefan Nemanja"
-        "https://ucibizbapl.files.wordpress.com/2014/03/stefan-nemanja1.jpg"
+        "Ime:" "Stefan Nemanja"
+        ""
         titula {
-            StefanNemanjaTitulaID
-            "titula"
             "Titula:"
             veliki zupan
             teritorija {
-                StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
-                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
-                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+                pocetakVladavine "Pocetak vladavine:" 1166
+                krajVladavine "Kraj vladavine:" 1196
             teritorija }
         titula }
 
         Vladar {
-            VukanImeID "vukan" "Ime:" "Vukan"
+            "Ime:" "Vukan"
             "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg"
             titula {
-                VukanTitulaID
-                "titula"
                 "Titula:"
                 veliki zupan
                 teritorija {
-                    VukanTeriorijaID
                     "Teritorija:"
                     "Raska"
-                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1202
-                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1207
+                    pocetakVladavine "Pocetak vladavine:" 1202
+                    krajVladavine "Kraj vladavine:" 1207
                 teritorija }
             titula }
              Vladar {
-                DmitarImeID "Dmitar" "Ime:" "Dmitar"
+                "Ime:" "Dmitar"
                 ""
                 titula {
-                    DmitarTitulaID
-                    "titula"
                     "Titula:"
                     veliki zupan
                     teritorija {
-                        DmitarTeriorijaID
                         "Teritorija:"
                         ""
-                        pocetakVladavine DmitarPocetakID "pocetak" "Pocetak vladavine:" 0
-                        krajVladavine DmitarKrajID "kraj" "Kraj vladavine:" 0
+                        pocetakVladavine "Pocetak vladavine:" 0
+                        krajVladavine "Kraj vladavine:" 0
                     teritorija }
                 titula }
                 Vladar {
-                    VratislavImeID "Vratislav" "Ime:" "Vratislav"
+                    "Ime:" "Vratislav"
                     ""
                     titula {
-                        VratislavTitulaID
-                        "titula"
                         "Titula:"
                         veliki zupan
                         teritorija {
-                            VratislavTeriorijaID
                             "Teritorija:"
                             ""
-                            pocetakVladavine VratislavPocetakID "pocetak" "Pocetak vladavine:" 0
-                            krajVladavine VratislavKrajID "kraj" "Kraj vladavine:" 0
+                            pocetakVladavine "Pocetak vladavine:" 0
+                            krajVladavine "Kraj vladavine:" 0
                         teritorija }
                     titula }
+                    Vladar {
+                        "Ime:" "Vratko"
+                        "http://i49.tinypic.com/2zgffqc.jpg"
+                        titula {
+                            "Titula:"
+                            veliki zupan
+                            teritorija {
+                                "Teritorija:"
+                                ""
+                                pocetakVladavine "Pocetak vladavine:" 0
+                                krajVladavine "Kraj vladavine:" 0
+                            teritorija }
+                        titula }
+                        Vladar {
+                            "Ime:" "Milica"
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kneginja_Milica.jpg/150px-Kneginja_Milica.jpg"
+                            titula {
+                                "Titula:"
+                                kneginja
+                                teritorija {
+                                    "Teritorija:"
+                                    "Srbija"
+                                    pocetakVladavine "Pocetak vladavine:" 1389
+                                    krajVladavine "Kraj vladavine:" 1393
+                                teritorija }
+                            titula }
+                        Vladar }
+                    Vladar }
                 Vladar }
             Vladar }
         Vladar }
 
         Vladar {
-            StefanPrvovencaniImeID "stefanPrvovencani" "Ime:" "Stefan Prvovencani"
+            "Ime:" "Stefan Prvovencani"
             "http://fakti.org/sites/default/files/2016-1/01.jpg"
             titula {
-                StefanPrvovencaniTitulaID
-                "titula"
                 "Titula:"
                 veliki zupan
                 teritorija {
-                    StefanPrvovencaniTeriorijaID
                     "Teritorija:"
                     "Zeta"
-                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1196
-                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1217
+                    pocetakVladavine "Pocetak vladavine:" 1196
+                    krajVladavine "Kraj vladavine:" 1217
                 teritorija }
             titula }
         Vladar }
 
         Vladar {
-            RastkoImeID "rastko" "Ime:" "Rastko"
+            "Ime:" "Rastko"
             "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif"
             titula {
-                RastkoTitulaID
-                "titula"
                 "Titula:"
                 arhiepiskop
                 teritorija {
-                    RastkoTeriorijaID
                     "Teritorija:"
                     "Srbija"
-                    pocetakVladavine VukanPocetakID "pocetak" "Pocetak vladavine:" 1175
-                    krajVladavine VukanKrajID "kraj" "Kraj vladavine:" 1236
+                    pocetakVladavine "Pocetak vladavine:" 1175
+                    krajVladavine "Kraj vladavine:" 1236
                 teritorija }
             titula }
         Vladar }
     Vladar }
 
     Vladar {
-        TihomirImeID "tihomir" "Ime:" "Tihomir"
+        "Ime:" "Tihomir"
         ""
         titula {
-            StefanNemanjaTitulaID
-            "titula"
             "Titula:"
             veliki zupan
             teritorija {
-                StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
-                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
-                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+                pocetakVladavine "Pocetak vladavine:" 1166
+                krajVladavine "Kraj vladavine:" 1196
             teritorija }
         titula }
     Vladar }
 
     Vladar {
-        StracimirImeID "stracimir" "Ime:" "Stracimir"
+        "Ime:" "Stracimir"
         ""
         titula {
-            StefanNemanjaTitulaID
-            "titula"
             "Titula:"
             veliki zupan
             teritorija {
-                StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
-                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
-                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+                pocetakVladavine "Pocetak vladavine:" 1166
+                krajVladavine "Kraj vladavine:" 1196
             teritorija }
         titula }
     Vladar }
 
     Vladar {
-        MiroslavImeID "miroslav" "Ime:" "Miroslav"
+        "Ime:" "Miroslav"
         ""
         titula {
-            StefanNemanjaTitulaID
-            "titula"
             "Titula:"
             veliki zupan
             teritorija {
-                StefanNemanjaTeriorijaID
                 "Teritorija:"
                 "Raska"
-                pocetakVladavine StefanNemanjaPocetakID "pocetak" "Pocetak vladavine:" 1166
-                krajVladavine StefanNemanjaKrajID "kraj" "Kraj vladavine:" 1196
+                pocetakVladavine "Pocetak vladavine:" 1166
+                krajVladavine "Kraj vladavine:" 1196
             teritorija }
         titula }
     Vladar }
