@@ -1,105 +1,102 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rodoslov</title>
-        <link rel="stylesheet" type="text/css" href="Tree.css">
-        <script src="Treant.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
-                 integrity="sha256-MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA="
-                crossorigin="anonymous"></script>
-    </head>
+{% extends "base.html" %}
 
-    <body>
-        <h1 align="center">{{rodoslov.naslov}}</h1><br/><br/>
-        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
-        <script>
-            simple_chart_config = {
-                chart: {
-                    container: "#tree-simple"
-                },
+{% block head_content %}
+    <link rel="stylesheet" type="text/css" href="../styleseats/tree.css">
 
-                nodeStructure: {
-                    text: { name: "{{rodoslov.rodonacelnik.ime.vrednost}}",
-                            {% for titulaR in rodoslov.rodonacelnik.titule %}
-                                titula: "{{titulaR.tip}}{% if titulaR.teritorija.naziv != "" %}, {{titulaR.teritorija.naziv}} {% endif %} {% if titulaR.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                            {%endfor%}
-                     },
-                     image: "{{rodoslov.rodonacelnik.slika}}",
-                    children: [
-                        {% for vladar in rodoslov.rodonacelnik.potomci %}
-                        {
-                            text: { name: "{{vladar.ime.vrednost}}",
-                                    {% for titulaV in vladar.titule %}
-                                        titula: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %} {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                    {% endfor %}
-                             },
-                            image: "{{vladar.slika}}",
-                            children:[
-                                {% for vladar1 in vladar.potomci %}
-                                    {
-                                        text: { name: "{{vladar1.ime.vrednost}}",
-                                                {% for titulaV in vladar1.titule %}
-                                                    titula: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %}  {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                                {% endfor %}
-                                         },
-                                         image: "{{vladar1.slika}}",
-                                          children:[
-                                                {% for vladar2 in vladar1.potomci %}
-                                                    {
-                                                        text: { name: "{{vladar2.ime.vrednost}}",
-                                                                {% for titulaV2 in vladar2.titule %}
-                                                                    titula: "{{titulaV2.tip}}{% if titulaV2.teritorija.naziv != "" %}, {{titulaV2.teritorija.naziv}} {% endif %}  {% if titulaV2.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV2.teritorija.pocetakVladavine.vrednost}} - {{titulaV2.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                                                {% endfor %}
-                                                         },
-                                                        image: "{{vladar2.slika}}",
-                                                        children:[
-                                                            {% for vladar3 in vladar2.potomci %}
-                                                                {
-                                                                    text: { name: "{{vladar3.ime.vrednost}}",
-                                                                            {% for titulaV3 in vladar3.titule %}
-                                                                                titula: "{{titulaV3.tip}}{% if titulaV3.teritorija.naziv != "" %}, {{titulaV3.teritorija.naziv}} {% endif %} {% if titulaV3.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV3.teritorija.pocetakVladavine.vrednost}} - {{titulaV3.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                                                            {% endfor %}
-                                                                     },
-                                                                     image: "{{vladar3.slika}}",
-                                                                    children:[
-                                                                        {% for vladar4 in vladar3.potomci %}
-                                                                            {
-                                                                                text: { name: "{{vladar4.ime.vrednost}}",
-                                                                                {% for titulaV4 in vladar4.titule %}
-                                                                                    titula: "{{titulaV4.tip}}{% if titulaV4.teritorija.naziv != "" %}, {{titulaV4.teritorija.naziv}} {% endif %} {% if titulaV4.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV4.teritorija.pocetakVladavine.vrednost}} - {{titulaV4.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                                                                {% endfor %}
-                                                                                },
-                                                                                image: "{{vladar4.slika}}",
-                                                                                children:[
-                                                                                    {% for vladar5 in vladar4.potomci %}
-                                                                                        {
-                                                                                            text: { name: "{{vladar5.ime.vrednost}}",
-                                                                                            {% for titulaV5 in vladar5.titule %}
-                                                                                                titula: "{{titulaV5.tip}}{% if titulaV5.teritorija.naziv != "" %}, {{titulaV5.teritorija.naziv}} {% endif %} {% if titulaV5.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV5.teritorija.pocetakVladavine.vrednost}} - {{titulaV5.teritorija.krajVladavine.vrednost}}) {% endif %}",
-                                                                                            {% endfor %}
-                                                                                            },
-                                                                                            image: "{{vladar5.slika}}",
-                                                                                        },
-                                                                                    {% endfor %}
-                                                                                ]
-                                                                            },
-                                                                        {% endfor %}
-                                                                    ]
-                                                                },
-                                                            {% endfor %}
-                                                        ]
-                                                    },
-                                                {% endfor %}
-                                            ]
-                                    },
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
+                     integrity="sha256-MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA="
+                    crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body_content %}
+    <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
+    <script>
+        simple_chart_config = {
+            chart: {
+                container: "#tree-simple"
+            },
+
+            nodeStructure: {
+                text: { name: "{{rodoslov.rodonacelnik.ime.vrednost}}",
+                        {% for titulaR in rodoslov.rodonacelnik.titule %}
+                            titula: "{{titulaR.tip}}{% if titulaR.teritorija.naziv != "" %}, {{titulaR.teritorija.naziv}} {% endif %} {% if titulaR.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                        {%endfor%}
+                 },
+                 image: "{{rodoslov.rodonacelnik.slika}}",
+                children: [
+                    {% for vladar in rodoslov.rodonacelnik.potomci %}
+                    {
+                        text: { name: "{{vladar.ime.vrednost}}",
+                                {% for titulaV in vladar.titule %}
+                                    titula: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %} {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                 {% endfor %}
-                            ]
-                        },
-                        {% endfor %}
-                    ]
-                }
-            };
-            var my_chart = new Treant(simple_chart_config);
-        </script>
-    </body>
-</html>
+                         },
+                        image: "{{vladar.slika}}",
+                        children:[
+                            {% for vladar1 in vladar.potomci %}
+                                {
+                                    text: { name: "{{vladar1.ime.vrednost}}",
+                                            {% for titulaV in vladar1.titule %}
+                                                titula: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %}  {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                            {% endfor %}
+                                     },
+                                     image: "{{vladar1.slika}}",
+                                      children:[
+                                            {% for vladar2 in vladar1.potomci %}
+                                                {
+                                                    text: { name: "{{vladar2.ime.vrednost}}",
+                                                            {% for titulaV2 in vladar2.titule %}
+                                                                titula: "{{titulaV2.tip}}{% if titulaV2.teritorija.naziv != "" %}, {{titulaV2.teritorija.naziv}} {% endif %}  {% if titulaV2.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV2.teritorija.pocetakVladavine.vrednost}} - {{titulaV2.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                            {% endfor %}
+                                                     },
+                                                    image: "{{vladar2.slika}}",
+                                                    children:[
+                                                        {% for vladar3 in vladar2.potomci %}
+                                                            {
+                                                                text: { name: "{{vladar3.ime.vrednost}}",
+                                                                        {% for titulaV3 in vladar3.titule %}
+                                                                            titula: "{{titulaV3.tip}}{% if titulaV3.teritorija.naziv != "" %}, {{titulaV3.teritorija.naziv}} {% endif %} {% if titulaV3.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV3.teritorija.pocetakVladavine.vrednost}} - {{titulaV3.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                        {% endfor %}
+                                                                 },
+                                                                 image: "{{vladar3.slika}}",
+                                                                children:[
+                                                                    {% for vladar4 in vladar3.potomci %}
+                                                                        {
+                                                                            text: { name: "{{vladar4.ime.vrednost}}",
+                                                                            {% for titulaV4 in vladar4.titule %}
+                                                                                titula: "{{titulaV4.tip}}{% if titulaV4.teritorija.naziv != "" %}, {{titulaV4.teritorija.naziv}} {% endif %} {% if titulaV4.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV4.teritorija.pocetakVladavine.vrednost}} - {{titulaV4.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                            {% endfor %}
+                                                                            },
+                                                                            image: "{{vladar4.slika}}",
+                                                                            children:[
+                                                                                {% for vladar5 in vladar4.potomci %}
+                                                                                    {
+                                                                                        text: { name: "{{vladar5.ime.vrednost}}",
+                                                                                        {% for titulaV5 in vladar5.titule %}
+                                                                                            titula: "{{titulaV5.tip}}{% if titulaV5.teritorija.naziv != "" %}, {{titulaV5.teritorija.naziv}} {% endif %} {% if titulaV5.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV5.teritorija.pocetakVladavine.vrednost}} - {{titulaV5.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                                        {% endfor %}
+                                                                                        },
+                                                                                        image: "{{vladar5.slika}}",
+                                                                                    },
+                                                                                {% endfor %}
+                                                                            ]
+                                                                        },
+                                                                    {% endfor %}
+                                                                ]
+                                                            },
+                                                        {% endfor %}
+                                                    ]
+                                                },
+                                            {% endfor %}
+                                        ]
+                                },
+                            {% endfor %}
+                        ]
+                    },
+                    {% endfor %}
+                ]
+            }
+        };
+        var my_chart = new Treant(simple_chart_config);
+    </script>
+{% endblock %}

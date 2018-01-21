@@ -1,159 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Rodoslov</title>
-        <link rel="stylesheet" type="text/css" href="Tree.css">
-        <script src="Treant.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
-                 integrity="sha256-MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA="
-                crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="../styleseats/navigation.css">
+
+        <script src="../styleseats/treant.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styleseats/tree.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"
+                     integrity="sha256-MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA="
+                    crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <h1 align="center">Nemanjici</h1><br/><br/>
-        <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
-        <script>
-            simple_chart_config = {
-                chart: {
-                    container: "#tree-simple"
-                },
+        <div class="topnav">
+          <a href="form.html">Stablo</a>
+          <a href="#">Vremenska linija</a>
+        </div>
 
-                nodeStructure: {
-                    text: { name: "Zavida",
-                                titula: "car, Srbija   (1234 - 1222) ",
-                     },
-                     image: "",
-                    children: [
-                        {
-                            text: { name: "Stefan Nemanja",
-                                        titula: "veliki zupan, Raska   (1166 - 1196) ",
-                             },
-                            image: "",
-                            children:[
-                                    {
-                                        text: { name: "Vukan",
-                                                    titula: "veliki zupan, Raska    (1202 - 1207) ",
-                                         },
-                                         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg",
-                                          children:[
-                                                    {
-                                                        text: { name: "Dmitar",
-                                                                    titula: "veliki zupan  ",
-                                                         },
-                                                        image: "",
-                                                        children:[
-                                                                {
-                                                                    text: { name: "Vratislav",
+        <div style="padding-left:16px">
+          <h1 >Nemanjici</h1><br/><br/>
+        </div>
+
+    <div id="tree-simple" style="height: 600px; margin: 5px; width: 2000px;"> </div>
+    <script>
+        simple_chart_config = {
+            chart: {
+                container: "#tree-simple"
+            },
+
+            nodeStructure: {
+                text: { name: "Zavida",
+                            titula: "car, Srbija   (1234 - 1222) ",
+                 },
+                 image: "",
+                children: [
+                    {
+                        text: { name: "Stefan Nemanja",
+                                    titula: "veliki zupan, Raska   (1166 - 1196) ",
+                         },
+                        image: "",
+                        children:[
+                                {
+                                    text: { name: "Vukan",
+                                                titula: "veliki zupan, Raska    (1202 - 1207) ",
+                                     },
+                                     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg",
+                                      children:[
+                                                {
+                                                    text: { name: "Dmitar",
+                                                                titula: "veliki zupan  ",
+                                                     },
+                                                    image: "",
+                                                    children:[
+                                                            {
+                                                                text: { name: "Vratislav",
+                                                                            titula: "veliki zupan ",
+                                                                 },
+                                                                 image: "",
+                                                                children:[
+                                                                        {
+                                                                            text: { name: "Vratko",
                                                                                 titula: "veliki zupan ",
-                                                                     },
-                                                                     image: "",
-                                                                    children:[
-                                                                            {
-                                                                                text: { name: "Vratko",
-                                                                                    titula: "veliki zupan ",
-                                                                                },
-                                                                                image: "http://i49.tinypic.com/2zgffqc.jpg",
-                                                                                children:[
-                                                                                        {
-                                                                                            text: { name: "Milica",
-                                                                                                titula: "kneginja, Srbija   (1389 - 1393) ",
-                                                                                            },
-                                                                                            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kneginja_Milica.jpg/150px-Kneginja_Milica.jpg",
-                                                                                        },
-                                                                                ]
                                                                             },
-                                                                    ]
-                                                                },
-                                                        ]
-                                                    },
-                                            ]
-                                    },
-                                    {
-                                        text: { name: "Stefan Prvovencani",
-                                                    titula: "veliki zupan, Zeta    (1196 - 1217) ",
-                                         },
-                                         image: "http://fakti.org/sites/default/files/2016-1/01.jpg",
-                                          children:[
-                                                    {
-                                                        text: { name: "Radoslav",
-                                                                    titula: "kralj, Srbija    (1228 - 1234) ",
-                                                         },
-                                                        image: "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg",
-                                                        children:[
-                                                        ]
-                                                    },
-                                                    {
-                                                        text: { name: "Vladislav",
-                                                                    titula: "kralj, Srbija    (1234 - 1243) ",
-                                                         },
-                                                        image: "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg",
-                                                        children:[
-                                                                {
-                                                                    text: { name: "Stefan",
-                                                                                titula: "nema ",
-                                                                     },
-                                                                     image: "",
-                                                                    children:[
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    text: { name: "Desa",
-                                                                                titula: "nema ",
-                                                                     },
-                                                                     image: "",
-                                                                    children:[
-                                                                    ]
-                                                                },
-                                                        ]
-                                                    },
-                                                    {
-                                                        text: { name: "Uros I",
-                                                                    titula: "kralj, Srbija    (1243 - 1276) ",
-                                                         },
-                                                        image: "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg",
-                                                        children:[
-                                                        ]
-                                                    },
-                                            ]
-                                    },
-                                    {
-                                        text: { name: "Rastko",
-                                                    titula: "arhiepiskop, Srbija    (1175 - 1236) ",
-                                         },
-                                         image: "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif",
-                                          children:[
-                                            ]
-                                    },
-                            ]
-                        },
-                        {
-                            text: { name: "Tihomir",
-                                        titula: "veliki zupan, Raska   (1166 - 1196) ",
-                             },
-                            image: "",
-                            children:[
-                            ]
-                        },
-                        {
-                            text: { name: "Stracimir",
-                                        titula: "veliki zupan, Raska   (1166 - 1196) ",
-                             },
-                            image: "",
-                            children:[
-                            ]
-                        },
-                        {
-                            text: { name: "Miroslav",
-                                        titula: "veliki zupan, Raska   (1166 - 1196) ",
-                             },
-                            image: "",
-                            children:[
-                            ]
-                        },
-                    ]
-                }
-            };
-            var my_chart = new Treant(simple_chart_config);
-        </script>
+                                                                            image: "http://i49.tinypic.com/2zgffqc.jpg",
+                                                                            children:[
+                                                                                    {
+                                                                                        text: { name: "Milica",
+                                                                                            titula: "kneginja, Srbija   (1389 - 1393) ",
+                                                                                        },
+                                                                                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kneginja_Milica.jpg/150px-Kneginja_Milica.jpg",
+                                                                                    },
+                                                                            ]
+                                                                        },
+                                                                ]
+                                                            },
+                                                    ]
+                                                },
+                                        ]
+                                },
+                                {
+                                    text: { name: "Stefan Prvovencani",
+                                                titula: "veliki zupan, Zeta    (1196 - 1217) ",
+                                     },
+                                     image: "http://fakti.org/sites/default/files/2016-1/01.jpg",
+                                      children:[
+                                                {
+                                                    text: { name: "Radoslav",
+                                                                titula: "kralj, Srbija    (1228 - 1234) ",
+                                                     },
+                                                    image: "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg",
+                                                    children:[
+                                                    ]
+                                                },
+                                                {
+                                                    text: { name: "Vladislav",
+                                                                titula: "kralj, Srbija    (1234 - 1243) ",
+                                                     },
+                                                    image: "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg",
+                                                    children:[
+                                                            {
+                                                                text: { name: "Stefan",
+                                                                            titula: "nema ",
+                                                                 },
+                                                                 image: "",
+                                                                children:[
+                                                                ]
+                                                            },
+                                                            {
+                                                                text: { name: "Desa",
+                                                                            titula: "nema ",
+                                                                 },
+                                                                 image: "",
+                                                                children:[
+                                                                ]
+                                                            },
+                                                    ]
+                                                },
+                                                {
+                                                    text: { name: "Uros I",
+                                                                titula: "kralj, Srbija    (1243 - 1276) ",
+                                                     },
+                                                    image: "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg",
+                                                    children:[
+                                                    ]
+                                                },
+                                        ]
+                                },
+                                {
+                                    text: { name: "Rastko",
+                                                titula: "arhiepiskop, Srbija    (1175 - 1236) ",
+                                     },
+                                     image: "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif",
+                                      children:[
+                                        ]
+                                },
+                        ]
+                    },
+                    {
+                        text: { name: "Tihomir",
+                                    titula: "veliki zupan, Raska   (1166 - 1196) ",
+                         },
+                        image: "",
+                        children:[
+                        ]
+                    },
+                    {
+                        text: { name: "Stracimir",
+                                    titula: "veliki zupan, Raska   (1166 - 1196) ",
+                         },
+                        image: "",
+                        children:[
+                        ]
+                    },
+                    {
+                        text: { name: "Miroslav",
+                                    titula: "veliki zupan, Raska   (1166 - 1196) ",
+                         },
+                        image: "",
+                        children:[
+                        ]
+                    },
+                ]
+            }
+        };
+        var my_chart = new Treant(simple_chart_config);
+    </script>
+
     </body>
 </html>

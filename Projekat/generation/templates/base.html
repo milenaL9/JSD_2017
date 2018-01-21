@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rodoslov</title>
+
+        <link rel="stylesheet" type="text/css" href="../styleseats/navigation.css">
+
+        <script src="../styleseats/treant.js"></script>
+
+        {% block head_content %}{% endblock %}
+    </head>
+    <body>
+        <div class="topnav">
+          <a href="form.html">Stablo</a>
+          <a href="#">Vremenska linija</a>
+        </div>
+
+        <div style="padding-left:16px">
+          <h1 >{{rodoslov.naslov}}</h1><br/><br/>
+        </div>
+
+        {% block body_content %}{% endblock %}
+
+    </body>
+</html>
