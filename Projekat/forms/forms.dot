@@ -11,56 +11,56 @@
     edge[dir=black,arrowtail=empty]
 
 
-1987397880328[ label="{KrajVladavine|+labela:STRING\l+vrednost:INT\l}"]
+20886760 -> 20889592[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
+20886760 -> 20882984[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
+20886760[ label="{Teritorija|+labela:STRING\l+naziv:STRING\l}"]
 
-1987397871832[ label="{Ime|+labela:STRING\l+vrednost:STRING\l}"]
+20878264[ label="{Ime|+labela:STRING\l+vrednost:STRING\l}"]
 
-1987397893544[ label="{PocetakVladavine|+labela:STRING\l+vrednost:INT\l}"]
+20867880 -> 20859384[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
+20867880[ label="{Rodoslov|+naslov:STRING\l}"]
 
-1987397874664 -> 1987397890712[arrowtail=diamond, dir=both, headlabel="teritorija "]
-1987397874664[ label="{Titula|+labela:STRING\l+tip:TitulaTip\l}"]
+20881096 -> 20886760[arrowtail=diamond, dir=both, headlabel="teritorija "]
+20881096[ label="{Titula|+labela:STRING\l+tip:TitulaTip\l}"]
 
-1987397878440[ label="{TitulaTip|veliki zupan\|kralj\|car\|carica\|kneginja\|arhiepiskop\|nema}"]
+20882984[ label="{KrajVladavine|+labela:STRING\l+vrednost:INT\l}"]
 
-1987397838792 -> 1987397871832[arrowtail=diamond, dir=both, headlabel="ime "]
-1987397838792 -> 1987397874664[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-1987397838792 -> 1987397862392[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-1987397838792[ label="{Rodonacelnik|+slika:STRING\l}"]
+20859384 -> 20878264[arrowtail=diamond, dir=both, headlabel="ime "]
+20859384 -> 20881096[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+20859384 -> 20875432[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+20859384[ label="{Rodonacelnik|+slika:STRING\l}"]
 
-1987397890712 -> 1987397893544[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
-1987397890712 -> 1987397880328[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
-1987397890712[ label="{Teritorija|+labela:STRING\l+naziv:STRING\l}"]
+20883928[ label="{TitulaTip|veliki zupan\|kralj\|car\|carica\|kneginja\|arhiepiskop\|nema\|mladi kralj\|vladar}"]
 
-1987397842568 -> 1987397838792[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
-1987397842568[ label="{Rodoslov|+naslov:STRING\l}"]
+20889592[ label="{PocetakVladavine|+labela:STRING\l+vrednost:INT\l}"]
 
-1987397862392 -> 1987397871832[arrowtail=diamond, dir=both, headlabel="ime "]
-1987397862392 -> 1987397874664[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-1987397862392 -> 1987397862392[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-1987397862392[ label="{Vladar|+slika:STRING\l}"]
+20875432 -> 20878264[arrowtail=diamond, dir=both, headlabel="ime "]
+20875432 -> 20881096[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+20875432 -> 20875432[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+20875432[ label="{Vladar|+slika:STRING\l}"]
 
-1987397851064[ label="{STRING|}"]
+20854664[ label="{ID|}"]
 
-1987397836904[ label="{NUMBER|}"]
-1987397836904 -> 1987397846344 [dir=back]
-1987397836904 -> 1987397852952 [dir=back]
+20868824[ label="{NUMBER|}"]
+20868824 -> 20865992 [dir=back]
+20868824 -> 20863160 [dir=back]
 
-1987397846344[ label="{FLOAT|}"]
+20865992[ label="{FLOAT|}"]
 
-1987397852952[ label="{INT|}"]
+20871656[ label="{BASETYPE|}"]
+20871656 -> 20868824 [dir=back]
+20871656 -> 20860328 [dir=back]
+20871656 -> 20854664 [dir=back]
+20871656 -> 20857496 [dir=back]
 
-1987397839736[ label="{ID|}"]
+20857496[ label="{STRING|}"]
 
-1987397859560[ label="{BASETYPE|}"]
-1987397859560 -> 1987397836904 [dir=back]
-1987397859560 -> 1987397845400 [dir=back]
-1987397859560 -> 1987397839736 [dir=back]
-1987397859560 -> 1987397851064 [dir=back]
+20860328[ label="{BOOL|}"]
 
-1987397845400[ label="{BOOL|}"]
+20863160[ label="{INT|}"]
 
-1987397860504[ label="{*OBJECT|}"]
-1987397860504 -> 1987397859560 [dir=back]
+20874488[ label="{*OBJECT|}"]
+20874488 -> 20871656 [dir=back]
 
 
 }

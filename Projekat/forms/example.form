@@ -181,6 +181,158 @@ Rodonacelnik {
                         krajVladavine "Kraj vladavine:" 1276
                     teritorija }
                 titula }
+                Vladar {
+                "Ime:" "Dragutin"
+                "https://a1-images.myspacecdn.com/images02/84/15902e65c31f44c78e097f644246f84c/300x300.jpg"
+                titula {
+                     "Titula:"
+                    kralj
+                    teritorija {
+                        "Teritorija:"
+                        "Srbija"
+                        pocetakVladavine "Pocetak vladavine:" 1276
+                        krajVladavine "Kraj vladavine:" 1282
+                    teritorija }
+                titula }
+                titula {
+                    "Titula:"
+                    kralj
+                    teritorija {
+                          "Teritorija:"
+                        "Srem"
+                        pocetakVladavine "Pocetak vladavine:" 1284
+                        krajVladavine "Kraj vladavine:" 1316
+                    teritorija }
+                titula}
+                Vladar {
+                      "Ime:" "Vladislav"
+                      ""
+                      titula {
+                         "Titula:"
+                    nema
+                    teritorija {
+                        "Teritorija:"
+                        ""
+                        pocetakVladavine "Pocetak vladavine:" 0
+                        krajVladavine "Kraj vladavine:" 0
+                    teritorija }
+                      titula}
+                Vladar}
+                Vladar }
+                Vladar {
+                     "Ime:" "Milutin"
+                     "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ljevis31.jpg/260px-Ljevis31.jpg"
+                     titula {
+                         "Titula:"
+                         kralj
+                         teritorija {
+                             "Teritorija:"
+                             "Srbija"
+                             pocetakVladavine "Pocetak vladavine:" 1282
+                             krajVladavine "Kraj vladavine:" 1321
+                         teritorija }
+                     titula }
+                     Vladar {
+                        "Ime:" "Konstantin"
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Konstantin_Gracanica_loza_lik.jpg/250px-Konstantin_Gracanica_loza_lik.jpg"
+                        titula {
+                             "Titula:"
+                             mladi kralj
+                             teritorija {
+                                 "Teritorija:"
+                                 "Zeta"
+                                 pocetakVladavine "Pocetak vladavine:" 1316
+                                 krajVladavine "Kraj vladavine:" 1322
+                             teritorija }
+                        titula }
+                     Vladar }
+                     Vladar {
+                        "Ime:" "Stefan Decanski"
+                        "https://upload.wikimedia.org/wikipedia/commons/f/f2/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8_%D0%A1%D1%82%D0%B5%D1%84%D0%B0%D0%BD_%D0%94%D0%B5%D1%87%D0%B0%D0%BD%D1%81%D0%BA%D0%B8_%28%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80_%D0%88%D0%B0%D1%81%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%29.jpg"
+                        titula {
+                            "Titula:"
+                            kralj
+                            teritorija {
+                                 "Teritorija:"
+                                 "Srbija"
+                                 pocetakVladavine "Pocetak vladavine:" 1322
+                                 krajVladavine "Kraj vladavine:" 1331
+                            teritorija }
+                        titula }
+                        Vladar {
+                             "Ime:" "Simeon Sinisa"
+                             "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Loza_Nemanjica_Decani_c_5_2.jpg/250px-Loza_Nemanjica_Decani_c_5_2.jpg"
+                             titula {
+                                "Titula:"
+                                car
+                                teritorija {
+                                    "Teritorija:"
+                                    "Romeja, Srba i cele Albanije"
+                                    pocetakVladavine "Pocetak vladavine:" 1359
+                                    krajVladavine "Kraj vladavine:" 1370
+                                teritorija }
+                             titula }
+                             titula {
+                                 "Titula:"
+                                vladar
+                                teritorija {
+                                    "Teritorija:"
+                                    "Epira"
+                                    pocetakVladavine "Pocetak vladavine:" 1359
+                                    krajVladavine "Kraj vladavine:" 1366
+                                teritorija }
+                             titula }
+                             titula {
+                                "Titula:"
+                                vladar
+                                teritorija {
+                                    "Teritorija:"
+                                    "Tesalije"
+                                    pocetakVladavine "Pocetak vladavine:" 1359
+                                    krajVladavine "Kraj vladavine:" 1371
+                                teritorija }
+                             titula }
+                        Vladar }
+                        Vladar {
+                             "Ime:" "Dusan Silni"
+                             "http://glaszapadnesrbije.rs/dp_press_slike/dusansilni.jpg"
+                             titula {
+                                "Titula:"
+                                kralj
+                                teritorija {
+                                    "Teritorija:"
+                                    "Srbija"
+                                     pocetakVladavine "Pocetak vladavine:" 1331
+                                     krajVladavine "Kraj vladavine:" 1346
+                                teritorija }
+                             titula }
+                             titula {
+                                "Titula:"
+                                car
+                                teritorija {
+                                    "Teritorija:"
+                                    "Srba i Romeja"
+                                     pocetakVladavine "Pocetak vladavine:" 1346
+                                     krajVladavine "Kraj vladavine:" 1355
+                                teritorija }
+                             titula }
+                             Vladar {
+                                "Ime:" "Uros Nejaki"
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UrosV.jpg/250px-UrosV.jpg"
+                                titula {
+                                "Titula:"
+                                car
+                                teritorija {
+                                    "Teritorija:"
+                                    "Srba i Romeja"
+                                     pocetakVladavine "Pocetak vladavine:" 1355
+                                     krajVladavine "Kraj vladavine:" 1371
+                                teritorija }
+                                titula }
+                             Vladar }
+                        Vladar }
+                     Vladar }
+                Vladar}
             Vladar }
         Vladar }
 
