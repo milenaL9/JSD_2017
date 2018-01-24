@@ -1,0 +1,56 @@
+{% extends "base.html" %}{% block body_content %}<h1>Gramatika rodoslova</h1>Rodoslov:
+<br/>    "rodoslov"
+<br/>    naslov = STRING
+<br/>    rodonacelnik = Rodonacelnik
+<br/>;
+<br/>
+<br/>Rodonacelnik:
+<br/>    "Rodonacelnik" "{"
+<br/>    ime = Ime
+<br/>    slika = STRING
+<br/>    titule += Titula
+<br/>    potomci *= Vladar
+<br/>    "Rodonacelnik" "}"
+<br/>;
+<br/>
+<br/>Vladar:
+<br/>    "Vladar" "{"
+<br/>    ime = Ime
+<br/>    slika = STRING
+<br/>    titule += Titula
+<br/>    potomci *= Vladar
+<br/>    "Vladar" "}"
+<br/>;
+<br/>
+<br/>Ime:
+<br/>    labela = STRING vrednost = STRING
+<br/>;
+<br/>
+<br/>Titula:
+<br/>    "titula" "{"
+<br/>    labela = STRING
+<br/>    tip = TitulaTip
+<br/>    teritorija=Teritorija
+<br/>    "titula" "}"
+<br/>;
+<br/>
+<br/>TitulaTip:
+<br/>    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'|'nema'
+<br/>;
+<br/>
+<br/>Teritorija:
+<br/>    "teritorija" "{"
+<br/>    labela = STRING
+<br/>    naziv = STRING
+<br/>    pocetakVladavine = PocetakVladavine
+<br/>    krajVladavine = KrajVladavine
+<br/>    "teritorija" "}"
+<br/>;
+<br/>
+<br/>PocetakVladavine:
+<br/>    "pocetakVladavine" labela = STRING vrednost = INT
+<br/>;
+<br/>
+<br/>KrajVladavine:
+<br/>    "krajVladavine" labela = STRING vrednost = INT
+<br/>;<br/>{% endblock %}
