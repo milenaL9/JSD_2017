@@ -34,7 +34,7 @@ def readFromFile():
     fileR.close()
 
 def noviTip(tip):
-    filename = os.path.abspath("../output/gramatikaSaNovimTipom.html")
+    filename = os.path.abspath("../output/gramatikaSaNovimTipom.tx")
     file = open(filename, 'a+')
     for line in file:
         if line.contains('TitulaTip:'):
