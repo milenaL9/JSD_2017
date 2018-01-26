@@ -6,7 +6,7 @@ import os
 
 def generate(template_name, output_name, render_vars):
     env = Environment(trim_blocks=True, lstrip_blocks=True, loader=PackageLoader("generation", "templates"))
-    env.filters['readFromFile'] = readFromFile
+   # env.filters['readFromFile'] = readFromFile
     template = env.get_template(template_name)
     rendered = template.render(render_vars)
     print(rendered)
@@ -33,11 +33,20 @@ def readFromFile():
     fileW.close()
     fileR.close()
 
+def noviTip(tip):
+    filename = os.path.abspath("../output/gramatikaSaNovimTipom.html")
+    file = open(filename, 'a+')
+    for line in file:
+        if line.contains('TitulaTip:'):
+            file.write("'" + tip + "'")
+    file.close()
+
 def main(debug=False):
     model = execute(os.path.join(root, "forms"), 'forms.tx', 'example.form', debug, debug)
     generate("form_template.html", "form.html", {"rodoslov": model})
     readFromFile()
     generate("form_gramatika.html", "gramatika.html", {"rodoslov": model})
+    noviTip('kralj')
 
 if __name__ == '__main__':
     main(True)
