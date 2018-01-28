@@ -1,4 +1,4 @@
-# Naziv projekta(izmeniti)
+# Gramatika za definisanje rodoslova
 ###### JSD 2017
 
 ## Pokretanje modela i aplikacije
