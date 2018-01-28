@@ -94,7 +94,7 @@ Zatim će se pojaviti novi prozor, na kojem se postavljaju početna podešavanja
 - Dodati putanju do bin direktorijuma Graphviz-a na PATH varijablu.
 - Kreirati folder virtualenviroments.
 - Pokrenuti command prompt kao administrator. Ispratiti sledeće korakre:
-1. Pozicionirati se iz komandne linije u folder virtualJSD.
+1. Pozicionirati se iz komandne linije u folder virtualenviroments.
 2. kucati: virtualenv virtualJSD
 3. kucati: virtualJSD\Scripts\activate
 4. kucati: pip install setuptools
