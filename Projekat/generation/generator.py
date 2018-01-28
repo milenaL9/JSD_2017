@@ -33,20 +33,12 @@ def readFromFile():
     fileW.close()
     fileR.close()
 
-def noviTip(tip):
-    filename = os.path.abspath("../output/gramatikaSaNovimTipom.tx")
-    file = open(filename, 'a+')
-    for line in file:
-        if line.contains('TitulaTip:'):
-            file.write("'" + tip + "'")
-    file.close()
 
 def main(debug=False):
     model = execute(os.path.join(root, "forms"), 'forms.tx', 'example.form', debug, debug)
     generate("form_template.html", "form.html", {"rodoslov": model})
     readFromFile()
     generate("form_gramatika.html", "gramatika.html", {"rodoslov": model})
-    noviTip('kralj')
 
 if __name__ == '__main__':
     main(True)
