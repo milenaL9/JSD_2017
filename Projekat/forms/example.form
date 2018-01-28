@@ -5,7 +5,7 @@ Rodonacelnik {
      ""
      titula {
         "Titula:"
-        car
+        "car"
         teritorija {
             "Teritorija:"
             "Srbija"
@@ -19,7 +19,7 @@ Rodonacelnik {
         ""
         titula {
             "Titula:"
-            veliki zupan
+            "veliki zupan"
             teritorija {
                 "Teritorija:"
                 "Raska"
@@ -33,7 +33,7 @@ Rodonacelnik {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg"
             titula {
                 "Titula:"
-                veliki zupan
+                "veliki zupan"
                 teritorija {
                     "Teritorija:"
                     "Raska"
@@ -46,7 +46,7 @@ Rodonacelnik {
                 ""
                 titula {
                     "Titula:"
-                    veliki zupan
+                    "veliki zupan"
                     teritorija {
                         "Teritorija:"
                         ""
@@ -59,7 +59,7 @@ Rodonacelnik {
                     ""
                     titula {
                         "Titula:"
-                        veliki zupan
+                        "veliki zupan"
                         teritorija {
                             "Teritorija:"
                             ""
@@ -72,7 +72,7 @@ Rodonacelnik {
                         "http://i49.tinypic.com/2zgffqc.jpg"
                         titula {
                             "Titula:"
-                            veliki zupan
+                            "veliki zupan"
                             teritorija {
                                 "Teritorija:"
                                 ""
@@ -85,7 +85,7 @@ Rodonacelnik {
                             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kneginja_Milica.jpg/150px-Kneginja_Milica.jpg"
                             titula {
                                 "Titula:"
-                                kneginja
+                                "kneginja"
                                 teritorija {
                                     "Teritorija:"
                                     "Srbija"
@@ -104,7 +104,7 @@ Rodonacelnik {
             "http://fakti.org/sites/default/files/2016-1/01.jpg"
             titula {
                 "Titula:"
-                veliki zupan
+                "veliki zupan"
                 teritorija {
                     "Teritorija:"
                     "Zeta"
@@ -117,7 +117,7 @@ Rodonacelnik {
                 "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg"
                 titula {
                     "Titula:"
-                    kralj
+                    "kralj"
                     teritorija {
                         "Teritorija:"
                         "Srbija"
@@ -131,7 +131,7 @@ Rodonacelnik {
                 "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg"
                 titula {
                     "Titula:"
-                    kralj
+                    "kralj"
                     teritorija {
                         "Teritorija:"
                         "Srbija"
@@ -144,7 +144,7 @@ Rodonacelnik {
                     ""
                     titula {
                         "Titula:"
-                        nema
+                        "nema"
                         teritorija {
                             "Teritorija:"
                             ""
@@ -158,7 +158,7 @@ Rodonacelnik {
                     ""
                     titula {
                         "Titula:"
-                        nema
+                        "nema"
                         teritorija {
                             "Teritorija:"
                             ""
@@ -173,7 +173,7 @@ Rodonacelnik {
                 "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg"
                 titula {
                     "Titula:"
-                    kralj
+                    "kralj"
                     teritorija {
                         "Teritorija:"
                         "Srbija"
@@ -186,7 +186,7 @@ Rodonacelnik {
                 "https://a1-images.myspacecdn.com/images02/84/15902e65c31f44c78e097f644246f84c/300x300.jpg"
                 titula {
                      "Titula:"
-                    kralj
+                    "kralj"
                     teritorija {
                         "Teritorija:"
                         "Srbija"
@@ -196,7 +196,7 @@ Rodonacelnik {
                 titula }
                 titula {
                     "Titula:"
-                    kralj
+                    "kralj"
                     teritorija {
                           "Teritorija:"
                         "Srem"
@@ -209,7 +209,7 @@ Rodonacelnik {
                       ""
                       titula {
                          "Titula:"
-                    nema
+                    "nema"
                     teritorija {
                         "Teritorija:"
                         ""
@@ -224,7 +224,7 @@ Rodonacelnik {
                      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ljevis31.jpg/260px-Ljevis31.jpg"
                      titula {
                          "Titula:"
-                         kralj
+                         "kralj"
                          teritorija {
                              "Teritorija:"
                              "Srbija"
@@ -237,7 +237,7 @@ Rodonacelnik {
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Konstantin_Gracanica_loza_lik.jpg/250px-Konstantin_Gracanica_loza_lik.jpg"
                         titula {
                              "Titula:"
-                             mladi kralj
+                             "mladi kralj"
                              teritorija {
                                  "Teritorija:"
                                  "Zeta"
@@ -251,7 +251,7 @@ Rodonacelnik {
                         "https://upload.wikimedia.org/wikipedia/commons/f/f2/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8_%D0%A1%D1%82%D0%B5%D1%84%D0%B0%D0%BD_%D0%94%D0%B5%D1%87%D0%B0%D0%BD%D1%81%D0%BA%D0%B8_%28%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80_%D0%88%D0%B0%D1%81%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%29.jpg"
                         titula {
                             "Titula:"
-                            kralj
+                            "kralj"
                             teritorija {
                                  "Teritorija:"
                                  "Srbija"
@@ -264,7 +264,7 @@ Rodonacelnik {
                              "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Loza_Nemanjica_Decani_c_5_2.jpg/250px-Loza_Nemanjica_Decani_c_5_2.jpg"
                              titula {
                                 "Titula:"
-                                car
+                                "car"
                                 teritorija {
                                     "Teritorija:"
                                     "Romeja, Srba i cele Albanije"
@@ -274,7 +274,7 @@ Rodonacelnik {
                              titula }
                              titula {
                                  "Titula:"
-                                vladar
+                                "vladar"
                                 teritorija {
                                     "Teritorija:"
                                     "Epira"
@@ -284,7 +284,7 @@ Rodonacelnik {
                              titula }
                              titula {
                                 "Titula:"
-                                vladar
+                                "vladar"
                                 teritorija {
                                     "Teritorija:"
                                     "Tesalije"
@@ -298,7 +298,7 @@ Rodonacelnik {
                              "http://glaszapadnesrbije.rs/dp_press_slike/dusansilni.jpg"
                              titula {
                                 "Titula:"
-                                kralj
+                                "kralj"
                                 teritorija {
                                     "Teritorija:"
                                     "Srbija"
@@ -308,7 +308,7 @@ Rodonacelnik {
                              titula }
                              titula {
                                 "Titula:"
-                                car
+                                "car"
                                 teritorija {
                                     "Teritorija:"
                                     "Srba i Romeja"
@@ -321,7 +321,7 @@ Rodonacelnik {
                                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UrosV.jpg/250px-UrosV.jpg"
                                 titula {
                                 "Titula:"
-                                car
+                                "car"
                                 teritorija {
                                     "Teritorija:"
                                     "Srba i Romeja"
@@ -341,7 +341,7 @@ Rodonacelnik {
             "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif"
             titula {
                 "Titula:"
-                arhiepiskop
+                "arhiepiskop"
                 teritorija {
                     "Teritorija:"
                     "Srbija"
@@ -357,7 +357,7 @@ Rodonacelnik {
         ""
         titula {
             "Titula:"
-            veliki zupan
+            "veliki zupan"
             teritorija {
                 "Teritorija:"
                 "Raska"
@@ -372,7 +372,7 @@ Rodonacelnik {
         ""
         titula {
             "Titula:"
-            veliki zupan
+            "veliki zupan"
             teritorija {
                 "Teritorija:"
                 "Raska"
@@ -387,7 +387,7 @@ Rodonacelnik {
         ""
         titula {
             "Titula:"
-            veliki zupan
+            "veliki zupan"
             teritorija {
                 "Teritorija:"
                 "Raska"

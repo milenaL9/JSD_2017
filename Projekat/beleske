@@ -1,1 +1,5 @@
 Da korisnik definise TitulaType, i posle kad bude koristio da se proveri da li je dobro uneo(da ne unese nesto sto ne postoji)
+
+TitulaTip:
+    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'|'nema'|'mladi kralj'|'vladar'
+;

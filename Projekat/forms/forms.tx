@@ -29,14 +29,11 @@ Ime:
 Titula:
     "titula" "{"
     labela = STRING
-    tip = TitulaTip
+    tip = STRING
     teritorija=Teritorija
     "titula" "}"
 ;
 
-TitulaTip:
-    'veliki zupan'|'kralj'|'car'|'carica'|'kneginja'|'arhiepiskop'|'nema'|'mladi kralj'|'vladar'
-;
 
 Teritorija:
     "teritorija" "{"
