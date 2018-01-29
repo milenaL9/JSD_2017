@@ -1,6 +1,9 @@
 {% extends "base.html" %}{% block body_content %}<h1>Gramatika rodoslova</h1>Rodoslov:
 <br/>    "rodoslov"
 <br/>    naslov = STRING
+<br/>    "vrste titula {"
+<br/>    vrsteTitula *= TitulaTip
+<br/>    "}"
 <br/>    rodonacelnik = Rodonacelnik
 <br/>;
 <br/>
@@ -26,13 +29,18 @@
 <br/>    labela = STRING vrednost = STRING
 <br/>;
 <br/>
+<br/>TitulaTip:
+<br/>    name = ID labela = STRING
+<br/>;
+<br/>
 <br/>Titula:
 <br/>    "titula" "{"
 <br/>    labela = STRING
-<br/>    tip = STRING
+<br/>    tip = [TitulaTip]
 <br/>    teritorija=Teritorija
 <br/>    "titula" "}"
 <br/>;
+<br/>
 <br/>
 <br/>
 <br/>Teritorija:

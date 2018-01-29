@@ -23,7 +23,7 @@
             nodeStructure: {
                 text: { name: "{{rodoslov.rodonacelnik.ime.vrednost}}",
                         {% for titulaR in rodoslov.rodonacelnik.titule %}
-                            titula_{{loop.index}}: "{{titulaR.tip}}{% if titulaR.teritorija.naziv != "" %}, {{titulaR.teritorija.naziv}} {% endif %} {% if titulaR.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                            titula_{{loop.index}}: "{{titulaR.tip.labela}}{% if titulaR.teritorija.naziv != "" %}, {{titulaR.teritorija.naziv}} {% endif %} {% if titulaR.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}}) {% endif %}",
                         {%endfor%}
                  },
                  image: "{{rodoslov.rodonacelnik.slika}}",
@@ -32,7 +32,7 @@
                     {
                         text: { name: "{{vladar.ime.vrednost}}",
                                 {% for titulaV in vladar.titule %}
-                                    titula_{{loop.index}}: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %} {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                    titula_{{loop.index}}: "{{titulaV.tip.labela}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %} {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                 {% endfor %}
                          },
                         image: "{{vladar.slika}}",
@@ -41,7 +41,7 @@
                                 {
                                     text: { name: "{{vladar1.ime.vrednost}}",
                                             {% for titulaV in vladar1.titule %}
-                                                titula_{{loop.index}}: "{{titulaV.tip}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %}  {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                titula_{{loop.index}}: "{{titulaV.tip.labela}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %}  {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                             {% endfor %}
                                      },
                                      image: "{{vladar1.slika}}",
@@ -50,7 +50,7 @@
                                                 {
                                                     text: { name: "{{vladar2.ime.vrednost}}",
                                                             {% for titulaV2 in vladar2.titule %}
-                                                                titula_{{loop.index}}: "{{titulaV2.tip}}{% if titulaV2.teritorija.naziv != "" %}, {{titulaV2.teritorija.naziv}} {% endif %}  {% if titulaV2.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV2.teritorija.pocetakVladavine.vrednost}} - {{titulaV2.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                titula_{{loop.index}}: "{{titulaV2.tip.labela}}{% if titulaV2.teritorija.naziv != "" %}, {{titulaV2.teritorija.naziv}} {% endif %}  {% if titulaV2.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV2.teritorija.pocetakVladavine.vrednost}} - {{titulaV2.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                             {% endfor %}
                                                      },
                                                     image: "{{vladar2.slika}}",
@@ -59,7 +59,7 @@
                                                             {
                                                                 text: { name: "{{vladar3.ime.vrednost}}",
                                                                         {% for titulaV3 in vladar3.titule %}
-                                                                            titula_{{loop.index}}: "{{titulaV3.tip}}{% if titulaV3.teritorija.naziv != "" %}, {{titulaV3.teritorija.naziv}} {% endif %} {% if titulaV3.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV3.teritorija.pocetakVladavine.vrednost}} - {{titulaV3.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                            titula_{{loop.index}}: "{{titulaV3.tip.labela}}{% if titulaV3.teritorija.naziv != "" %}, {{titulaV3.teritorija.naziv}} {% endif %} {% if titulaV3.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV3.teritorija.pocetakVladavine.vrednost}} - {{titulaV3.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                         {% endfor %}
                                                                  },
                                                                  image: "{{vladar3.slika}}",
@@ -68,7 +68,7 @@
                                                                         {
                                                                             text: { name: "{{vladar4.ime.vrednost}}",
                                                                             {% for titulaV4 in vladar4.titule %}
-                                                                                titula_{{loop.index}}: "{{titulaV4.tip}}{% if titulaV4.teritorija.naziv != "" %}, {{titulaV4.teritorija.naziv}} {% endif %} {% if titulaV4.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV4.teritorija.pocetakVladavine.vrednost}} - {{titulaV4.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                                titula_{{loop.index}}: "{{titulaV4.tip.labela}}{% if titulaV4.teritorija.naziv != "" %}, {{titulaV4.teritorija.naziv}} {% endif %} {% if titulaV4.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV4.teritorija.pocetakVladavine.vrednost}} - {{titulaV4.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                             {% endfor %}
                                                                             },
                                                                             image: "{{vladar4.slika}}",
@@ -77,7 +77,7 @@
                                                                                     {
                                                                                         text: { name: "{{vladar5.ime.vrednost}}",
                                                                                         {% for titulaV5 in vladar5.titule %}
-                                                                                            titula_{{loop.index}}: "{{titulaV5.tip}}{% if titulaV5.teritorija.naziv != "" %}, {{titulaV5.teritorija.naziv}} {% endif %} {% if titulaV5.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV5.teritorija.pocetakVladavine.vrednost}} - {{titulaV5.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                                            titula_{{loop.index}}: "{{titulaV5.tip.labela}}{% if titulaV5.teritorija.naziv != "" %}, {{titulaV5.teritorija.naziv}} {% endif %} {% if titulaV5.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV5.teritorija.pocetakVladavine.vrednost}} - {{titulaV5.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                                         {% endfor %}
                                                                                         },
                                                                                         image: "{{vladar5.slika}}",
@@ -86,7 +86,7 @@
                                                                                                 {
                                                                                                     text: { name: "{{vladar6.ime.vrednost}}",
                                                                                                     {% for titulaV6 in vladar6.titule %}
-                                                                                                         titula_{{loop.index}}: "{{titulaV6.tip}}{% if titulaV6.teritorija.naziv != "" %}, {{titulaV6.teritorija.naziv}} {% endif %} {% if titulaV6.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV6.teritorija.pocetakVladavine.vrednost}} - {{titulaV6.teritorija.krajVladavine.vrednost}}) {% endif %}",
+                                                                                                         titula_{{loop.index}}: "{{titulaV6.tip.labela}}{% if titulaV6.teritorija.naziv != "" %}, {{titulaV6.teritorija.naziv}} {% endif %} {% if titulaV6.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV6.teritorija.pocetakVladavine.vrednost}} - {{titulaV6.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                                                     {% endfor %}
                                                                                                  },
                                                                                                 image: "{{vladar6.slika}}",

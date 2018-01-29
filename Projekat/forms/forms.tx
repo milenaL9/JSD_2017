@@ -1,6 +1,9 @@
 Rodoslov:
     "rodoslov"
     naslov = STRING
+    "vrste titula {"
+    vrsteTitula *= TitulaTip
+    "}"
     rodonacelnik = Rodonacelnik
 ;
 
@@ -26,13 +29,18 @@ Ime:
     labela = STRING vrednost = STRING
 ;
 
+TitulaTip:
+    name = ID labela = STRING
+;
+
 Titula:
     "titula" "{"
     labela = STRING
-    tip = STRING
+    tip = [TitulaTip]
     teritorija=Teritorija
     "titula" "}"
 ;
+
 
 
 Teritorija:
