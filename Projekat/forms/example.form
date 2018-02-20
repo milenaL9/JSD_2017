@@ -4,7 +4,7 @@ vrste titula {
     velikiZupan "veliki zupan"
     kneginja "kneginja"
     kralj "kralj"
-    nema "nema"
+    nemaTitulu "nema titulu"
     mladiKralj "mladi kralj"
     vladar "vladar"
     arhiepiskop "arhiepiskop"
@@ -175,7 +175,7 @@ Rodonacelnik {
                     "opis:" "Nepoznato"
                     titula {
                         "Titula:"
-                        nema
+                        nemaTitulu
                         teritorija {
                             "Teritorija:"
                             ""
@@ -191,7 +191,7 @@ Rodonacelnik {
                     "opis:" "Nepoznato"
                     titula {
                         "Titula:"
-                        nema
+                        nemaTitulu
                         teritorija {
                             "Teritorija:"
                             ""
@@ -248,7 +248,7 @@ Rodonacelnik {
                       "opis:" "Pred Stefanom Decanskim se povukao u Ugarsku."
                       titula {
                          "Titula:"
-                    nema
+                    nemaTitulu
                     teritorija {
                         "Teritorija:"
                         ""
