@@ -11,66 +11,66 @@
     edge[dir=black,arrowtail=empty]
 
 
-20362040[ label="{KrajVladavine|+labela:STRING\l+vrednost:INT\l}"]
+20813144 -> 20810312[headlabel="tip "]
+20813144 -> 20806536[arrowtail=diamond, dir=both, headlabel="teritorija "]
+20813144[ label="{Titula|+labela:STRING\l}"]
 
-20354488 -> 20345992[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
-20354488 -> 20362040[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
-20354488[ label="{Teritorija|+labela:STRING\l+naziv:STRING\l}"]
+20782936 -> 20807480[arrowtail=diamond, dir=both, headlabel="ime "]
+20782936 -> 20801816[arrowtail=diamond, dir=both, headlabel="supruznik "]
+20782936 -> 20798984[arrowtail=diamond, dir=both, headlabel="opis "]
+20782936 -> 20813144[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+20782936 -> 20804648[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+20782936[ label="{Rodonacelnik|+slika:STRING\l}"]
 
-20345992[ label="{PocetakVladavine|+labela:STRING\l+vrednost:INT\l}"]
+20777272[ label="{PocetakVladavine|+labela:STRING\l+vrednost:INT\l}"]
 
-20344104 -> 20355432[arrowtail=diamond, dir=both, headlabel="ime "]
-20344104 -> 20349768[arrowtail=diamond, dir=both, headlabel="supruznik "]
-20344104 -> 20346936[arrowtail=diamond, dir=both, headlabel="opis "]
-20344104 -> 20361096[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-20344104 -> 20352600[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-20344104[ label="{Rodonacelnik|+slika:STRING\l}"]
+20791432 -> 20810312[arrowtail=diamond, dir=both, headlabel="vrsteTitula 0..*"]
+20791432 -> 20782936[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
+20791432[ label="{Rodoslov|+naslov:STRING\l}"]
 
-20361096 -> 20358264[headlabel="tip "]
-20361096 -> 20354488[arrowtail=diamond, dir=both, headlabel="teritorija "]
-20361096[ label="{Titula|+labela:STRING\l}"]
+20806536 -> 20777272[arrowtail=diamond, dir=both, headlabel="pocetakVladavine "]
+20806536 -> 20814088[arrowtail=diamond, dir=both, headlabel="krajVladavine "]
+20806536[ label="{Teritorija|+labela:STRING\l+naziv:STRING\l}"]
 
-20346936[ label="{Opis|+labela:STRING\l+vrednost:STRING\l}"]
+20801816[ label="{Supruznik|+labela:STRING\l+vrednost:STRING\l}"]
 
-20352600 -> 20355432[arrowtail=diamond, dir=both, headlabel="ime "]
-20352600 -> 20349768[arrowtail=diamond, dir=both, headlabel="supruznik "]
-20352600 -> 20346936[arrowtail=diamond, dir=both, headlabel="opis "]
-20352600 -> 20361096[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
-20352600 -> 20352600[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
-20352600[ label="{Vladar|+slika:STRING\l}"]
+20814088[ label="{KrajVladavine|+labela:STRING\l+vrednost:INT\l}"]
 
-20341272 -> 20358264[arrowtail=diamond, dir=both, headlabel="vrsteTitula 0..*"]
-20341272 -> 20344104[arrowtail=diamond, dir=both, headlabel="rodonacelnik "]
-20341272[ label="{Rodoslov|+naslov:STRING\l}"]
+20810312[ label="{TitulaTip|+name:ID\l+labela:STRING\l}"]
 
-20358264[ label="{TitulaTip|+name:ID\l+labela:STRING\l}"]
+20804648 -> 20807480[arrowtail=diamond, dir=both, headlabel="ime "]
+20804648 -> 20801816[arrowtail=diamond, dir=both, headlabel="supruznik "]
+20804648 -> 20798984[arrowtail=diamond, dir=both, headlabel="opis "]
+20804648 -> 20813144[arrowtail=diamond, dir=both, headlabel="titule 1..*"]
+20804648 -> 20804648[arrowtail=diamond, dir=both, headlabel="potomci 0..*"]
+20804648[ label="{Vladar|+slika:STRING\l}"]
 
-20349768[ label="{Supruznik|+labela:STRING\l+vrednost:STRING\l}"]
+20807480[ label="{Ime|+labela:STRING\l+vrednost:STRING\l}"]
 
-20355432[ label="{Ime|+labela:STRING\l+vrednost:STRING\l}"]
+20798984[ label="{Opis|+labela:STRING\l+vrednost:STRING\l}"]
 
-51174952[ label="{BASETYPE|}"]
-51174952 -> 51172120 [dir=back]
-51174952 -> 51163624 [dir=back]
-51174952 -> 51157960 [dir=back]
-51174952 -> 51160792 [dir=back]
+20789544[ label="{FLOAT|}"]
 
-51163624[ label="{BOOL|}"]
+20781048[ label="{STRING|}"]
 
-51172120[ label="{NUMBER|}"]
-51172120 -> 51169288 [dir=back]
-51172120 -> 51166456 [dir=back]
+20792376[ label="{NUMBER|}"]
+20792376 -> 20789544 [dir=back]
+20792376 -> 20786712 [dir=back]
 
-20339384[ label="{*OBJECT|}"]
-20339384 -> 51174952 [dir=back]
+20778216[ label="{ID|}"]
 
-51160792[ label="{STRING|}"]
+20783880[ label="{BOOL|}"]
 
-51166456[ label="{INT|}"]
+20786712[ label="{INT|}"]
 
-51157960[ label="{ID|}"]
+20795208[ label="{BASETYPE|}"]
+20795208 -> 20792376 [dir=back]
+20795208 -> 20783880 [dir=back]
+20795208 -> 20778216 [dir=back]
+20795208 -> 20781048 [dir=back]
 
-51169288[ label="{FLOAT|}"]
+20798040[ label="{*OBJECT|}"]
+20798040 -> 20795208 [dir=back]
 
 
 }
