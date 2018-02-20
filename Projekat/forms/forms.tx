@@ -11,10 +11,21 @@ Rodonacelnik:
     "Rodonacelnik" "{"
     ime = Ime
     slika = STRING
+    supruznik = Supruznik
+    opis = Opis
     titule += Titula
     potomci *= Vladar
     "Rodonacelnik" "}"
 ;
+
+Opis:
+    labela = STRING vrednost=STRING
+;
+
+Supruznik:
+    labela = STRING vrednost=STRING
+;
+
 
 Vladar:
     "Vladar" "{"

@@ -12,6 +12,8 @@ vrste titula {
 Rodonacelnik {
      "Ime:" "Zavida"
      ""
+     "supruznik:" "Nepoznat"
+     "opis:" "Vlastelin iz raske dinastije Vukanovica. U narodu poznat kao Bela Uros"
      titula {
         "Titula:"
         car

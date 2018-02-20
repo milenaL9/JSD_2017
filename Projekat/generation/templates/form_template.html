@@ -22,11 +22,13 @@
 
             nodeStructure: {
                 text: { name: "{{rodoslov.rodonacelnik.ime.vrednost}}",
+                        supruznik: "{{rodoslov.rodonacelnik.supruznik.labela}} {{rodoslov.rodonacelnik.supruznik.vrednost}}",
+                        opis: "{{rodoslov.rodonacelnik.opis.labela}} {{rodoslov.rodonacelnik.opis.vrednost}}",
                         {% for titulaR in rodoslov.rodonacelnik.titule %}
                             titula_{{loop.index}}: "{{titulaR.tip.labela}}{% if titulaR.teritorija.naziv != "" %}, {{titulaR.teritorija.naziv}} {% endif %} {% if titulaR.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaR.teritorija.pocetakVladavine.vrednost}} - {{titulaR.teritorija.krajVladavine.vrednost}}) {% endif %}",
                         {%endfor%}
                  },
-                 image: "{{rodoslov.rodonacelnik.slika}}",
+                image: "{{rodoslov.rodonacelnik.slika}}",
                 children: [
                     {% for vladar in rodoslov.rodonacelnik.potomci %}
                     {
