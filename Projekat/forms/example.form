@@ -12,7 +12,7 @@ vrste titula {
 Rodonacelnik {
      "Ime:" "Zavida"
      ""
-     "supruznik:" "Nepoznat"
+     "supruznik:" "Nepoznato"
      "opis:" "Vlastelin iz raske dinastije Vukanovica. U narodu poznat kao Bela Uros"
      titula {
         "Titula:"
@@ -28,6 +28,8 @@ Rodonacelnik {
     Vladar {
         "Ime:" "Stefan Nemanja"
         ""
+        "supruznik:" "Ana"
+        "opis:" "Rodonacelnik vladarske dinastije Nemanjica, koja je vladala Srbijom kada je ona bila najmocnija u srednjem veku. Ktiror manastira Sv. Nikole"
         titula {
             "Titula:"
             velikiZupan
@@ -42,6 +44,8 @@ Rodonacelnik {
         Vladar {
             "Ime:" "Vukan"
             "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Loza_Nemanjica_Decani_e_3.jpg/260px-Loza_Nemanjica_Decani_e_3.jpg"
+            "supruznik:" "Nepoznato"
+            "opis:" "Najstariji sin. Ocekivalo se da on bude naslednik, umesto njega dosao Stefan Prvovencani."
             titula {
                 "Titula:"
                 velikiZupan
@@ -55,6 +59,8 @@ Rodonacelnik {
              Vladar {
                 "Ime:" "Dmitar"
                 ""
+                "supruznik:" "Nepoznato"
+                "opis:" "Kao monah David postao je svetitelj u Srpskoj pravoslavnoj crkvi. Ktitor manastira Davidovice"
                 titula {
                     "Titula:"
                     velikiZupan
@@ -68,6 +74,8 @@ Rodonacelnik {
                 Vladar {
                     "Ime:" "Vratislav"
                     ""
+                    "supruznik:" "Nepoznato"
+                    "opis:" "Nema"
                     titula {
                         "Titula:"
                         velikiZupan
@@ -81,6 +89,8 @@ Rodonacelnik {
                     Vladar {
                         "Ime:" "Vratko"
                         "http://i49.tinypic.com/2zgffqc.jpg"
+                        "supruznik:" "Nepoznato"
+                        "opis:" "U istoriji poznat kao Jug Bogdan (u epskim narodnim pesmama) sa svojih devet sinova."
                         titula {
                             "Titula:"
                             velikiZupan
@@ -94,6 +104,8 @@ Rodonacelnik {
                         Vladar {
                             "Ime:" "Milica"
                             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kneginja_Milica.jpg/150px-Kneginja_Milica.jpg"
+                            "supruznik:" "Srpski knez Lazar"
+                            "opis:" "Srednjovekovna spisateljica i pravoslavna svetiteljka."
                             titula {
                                 "Titula:"
                                 kneginja
@@ -113,6 +125,8 @@ Rodonacelnik {
         Vladar {
             "Ime:" "Stefan Prvovencani"
             "http://fakti.org/sites/default/files/2016-1/01.jpg"
+            "supruznik:" "Evdokija Andjel, Ana Dandolo"
+            "opis:" "Prvi krunisani kralj medju Nemanjicima, zbog cega je nazvan Prvovencani."
             titula {
                 "Titula:"
                 velikiZupan
@@ -126,6 +140,8 @@ Rodonacelnik {
             Vladar {
                 "Ime:" "Radoslav"
                 "http://dinastija-nemanjic.weebly.com/uploads/1/5/8/8/15883696/_1356895022.jpg"
+                "supruznik:" "Ana Andjelina Komnina Ana Andjelina"
+                "opis:" "Sahranjen u manastiru Studenica."
                 titula {
                     "Titula:"
                     kralj
@@ -140,6 +156,8 @@ Rodonacelnik {
             Vladar {
                 "Ime:" "Vladislav"
                 "http://tragomsrpskihsvetinja.com/images/galleries/nemanjici/kralj_vladislav.jpg"
+                "supruznik:" "Belosava Bugarska"
+                "opis:" "Sahranjen u manastiru Mileseva."
                 titula {
                     "Titula:"
                     kralj
@@ -153,6 +171,8 @@ Rodonacelnik {
                 Vladar {
                     "Ime:" "Stefan"
                     ""
+                    "supruznik:" "Nepoznato"
+                    "opis:" "Nepoznato"
                     titula {
                         "Titula:"
                         nema
@@ -167,6 +187,8 @@ Rodonacelnik {
                Vladar {
                     "Ime:" "Desa"
                     ""
+                    "supruznik:" "Nepoznato"
+                    "opis:" "Nepoznato"
                     titula {
                         "Titula:"
                         nema
@@ -182,6 +204,8 @@ Rodonacelnik {
             Vladar{
                 "Ime:" "Uros I"
                 "https://upload.wikimedia.org/wikipedia/sr/e/e8/Srpski_kralj_Stefan_Uros_I_Nemanjic.jpg"
+                "supruznik:" "Jelena Anzujska"
+                "opis:" "Docekao svoju suprugu sa dolinom cveca u okolini reke Ibar - Dolina Jorgovana"
                 titula {
                     "Titula:"
                     kralj
@@ -195,6 +219,8 @@ Rodonacelnik {
                 Vladar {
                 "Ime:" "Dragutin"
                 "https://a1-images.myspacecdn.com/images02/84/15902e65c31f44c78e097f644246f84c/300x300.jpg"
+                "supruznik:" "Katalina Arpadovic"
+                "opis:" "Sahranjen u manastiru Djurdjevi stupovi."
                 titula {
                      "Titula:"
                     kralj
@@ -218,6 +244,8 @@ Rodonacelnik {
                 Vladar {
                       "Ime:" "Vladislav"
                       ""
+                      "supruznik:" "Konstanca Morozini"
+                      "opis:" "Pred Stefanom Decanskim se povukao u Ugarsku."
                       titula {
                          "Titula:"
                     nema
@@ -233,6 +261,8 @@ Rodonacelnik {
                 Vladar {
                      "Ime:" "Milutin"
                      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ljevis31.jpg/260px-Ljevis31.jpg"
+                     "supruznik:" "Simonida"
+                     "opis:" "Ozenio petogodisnju Simonidu, vizantijsku princezu, kako bi sklopio mir. "
                      titula {
                          "Titula:"
                          kralj
@@ -246,6 +276,8 @@ Rodonacelnik {
                      Vladar {
                         "Ime:" "Konstantin"
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Konstantin_Gracanica_loza_lik.jpg/250px-Konstantin_Gracanica_loza_lik.jpg"
+                        "supruznik:" "Nepoznato"
+                        "opis:" "Naslednik oca kralja Milutina. Ubio ga brat Stefan Decanski da bi prigrabio vlast."
                         titula {
                              "Titula:"
                              mladiKralj
@@ -260,6 +292,8 @@ Rodonacelnik {
                      Vladar {
                         "Ime:" "Stefan Decanski"
                         "https://upload.wikimedia.org/wikipedia/commons/f/f2/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8_%D0%A1%D1%82%D0%B5%D1%84%D0%B0%D0%BD_%D0%94%D0%B5%D1%87%D0%B0%D0%BD%D1%81%D0%BA%D0%B8_%28%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80_%D0%88%D0%B0%D1%81%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%29.jpg"
+                        "supruznik:" "Teodora Smilec, Marija"
+                        "opis:" "Sirio Srbiju na racun Vizantije i od Srbije napravio najvecu balkansku silu."
                         titula {
                             "Titula:"
                             kralj
@@ -273,6 +307,8 @@ Rodonacelnik {
                         Vladar {
                              "Ime:" "Simeon Sinisa"
                              "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Loza_Nemanjica_Decani_c_5_2.jpg/250px-Loza_Nemanjica_Decani_c_5_2.jpg"
+                             "supruznik:" "Nepoznato"
+                             "opis:" "Otac mu namenio vlast, ali ga brat Dusan zbacio sa vlasti drzavnim udarom."
                              titula {
                                 "Titula:"
                                 car
@@ -307,6 +343,8 @@ Rodonacelnik {
                         Vladar {
                              "Ime:" "Dusan Silni"
                              "http://glaszapadnesrbije.rs/dp_press_slike/dusansilni.jpg"
+                             "supruznik:" "Jelena"
+                             "opis:" "Najveci i najznacajniji vladar svih Juznih Slovena. Jedan od retkih Nemanjica koji nije proglasen za sveca."
                              titula {
                                 "Titula:"
                                 kralj
@@ -330,6 +368,8 @@ Rodonacelnik {
                              Vladar {
                                 "Ime:" "Uros Nejaki"
                                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UrosV.jpg/250px-UrosV.jpg"
+                                "supruznik:" "Ana Besarab"
+                                "opis:" "Poslednji vladar loze Nemanjica."
                                 titula {
                                 "Titula:"
                                 car
@@ -350,6 +390,8 @@ Rodonacelnik {
         Vladar {
             "Ime:" "Rastko"
             "http://srednjeskole.edukacija.rs/wp-content/uploads/2015/07/Ikona-Svetog-Save.gif"
+            "supruznik:" "Nema"
+            "opis:" "Iguman manastira Studenice i prvi arhiepiskop autokefalne Srpske pravoslavne crkve."
             titula {
                 "Titula:"
                 arhiepiskop
@@ -366,6 +408,8 @@ Rodonacelnik {
     Vladar {
         "Ime:" "Tihomir"
         ""
+        "supruznik:" "Nepoznato"
+        "opis:" "Zaduzbine crkva Svetog Petra i Pavla, u Bijelom polju, gde je napisano Miroslavovo jevandjelje."
         titula {
             "Titula:"
             velikiZupan
@@ -381,6 +425,8 @@ Rodonacelnik {
     Vladar {
         "Ime:" "Stracimir"
         ""
+        "supruznik:" "Nepoznato"
+        "opis:" "Osnivac je grada-utvrdjenja Gradca na mestu danasnjeg Cacka gde je stolovao. Ktitor je manastira Moravski gradac"
         titula {
             "Titula:"
             velikiZupan
@@ -396,6 +442,8 @@ Rodonacelnik {
     Vladar {
         "Ime:" "Miroslav"
         ""
+        "supruznik:" "Sestra bosanskog bana Kulina"
+        "opis:" "Osnivac je manastira Sv. Petra na Limu"
         titula {
             "Titula:"
             velikiZupan

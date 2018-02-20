@@ -33,6 +33,8 @@
                     {% for vladar in rodoslov.rodonacelnik.potomci %}
                     {
                         text: { name: "{{vladar.ime.vrednost}}",
+                                supruznik: "{{vladar.supruznik.labela}} {{vladar.supruznik.vrednost}}",
+                                opis: "{{vladar.opis.labela}} {{vladar.opis.vrednost}}",
                                 {% for titulaV in vladar.titule %}
                                     titula_{{loop.index}}: "{{titulaV.tip.labela}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %} {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                 {% endfor %}
@@ -42,6 +44,8 @@
                             {% for vladar1 in vladar.potomci %}
                                 {
                                     text: { name: "{{vladar1.ime.vrednost}}",
+                                            supruznik: "{{vladar1.supruznik.labela}} {{vladar1.supruznik.vrednost}}",
+                                            opis: "{{vladar1.opis.labela}} {{vladar1.opis.vrednost}}",
                                             {% for titulaV in vladar1.titule %}
                                                 titula_{{loop.index}}: "{{titulaV.tip.labela}}{% if titulaV.teritorija.naziv != "" %}, {{titulaV.teritorija.naziv}} {% endif %}  {% if titulaV.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV.teritorija.pocetakVladavine.vrednost}} - {{titulaV.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                             {% endfor %}
@@ -51,6 +55,8 @@
                                             {% for vladar2 in vladar1.potomci %}
                                                 {
                                                     text: { name: "{{vladar2.ime.vrednost}}",
+                                                            supruznik: "{{vladar2.supruznik.labela}} {{vladar2.supruznik.vrednost}}",
+                                                            opis: "{{vladar2.opis.labela}} {{vladar2.opis.vrednost}}",
                                                             {% for titulaV2 in vladar2.titule %}
                                                                 titula_{{loop.index}}: "{{titulaV2.tip.labela}}{% if titulaV2.teritorija.naziv != "" %}, {{titulaV2.teritorija.naziv}} {% endif %}  {% if titulaV2.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV2.teritorija.pocetakVladavine.vrednost}} - {{titulaV2.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                             {% endfor %}
@@ -60,15 +66,19 @@
                                                         {% for vladar3 in vladar2.potomci %}
                                                             {
                                                                 text: { name: "{{vladar3.ime.vrednost}}",
+                                                                        supruznik: "{{vladar3.supruznik.labela}} {{vladar3.supruznik.vrednost}}",
+                                                                        opis: "{{vladar3.opis.labela}} {{vladar3.opis.vrednost}}",
                                                                         {% for titulaV3 in vladar3.titule %}
                                                                             titula_{{loop.index}}: "{{titulaV3.tip.labela}}{% if titulaV3.teritorija.naziv != "" %}, {{titulaV3.teritorija.naziv}} {% endif %} {% if titulaV3.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV3.teritorija.pocetakVladavine.vrednost}} - {{titulaV3.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                         {% endfor %}
                                                                  },
-                                                                 image: "{{vladar3.slika}}",
+                                                                image: "{{vladar3.slika}}",
                                                                 children:[
                                                                     {% for vladar4 in vladar3.potomci %}
                                                                         {
                                                                             text: { name: "{{vladar4.ime.vrednost}}",
+                                                                                    supruznik: "{{vladar4.supruznik.labela}} {{vladar4.supruznik.vrednost}}",
+                                                                                    opis: "{{vladar4.opis.labela}} {{vladar4.opis.vrednost}}",
                                                                             {% for titulaV4 in vladar4.titule %}
                                                                                 titula_{{loop.index}}: "{{titulaV4.tip.labela}}{% if titulaV4.teritorija.naziv != "" %}, {{titulaV4.teritorija.naziv}} {% endif %} {% if titulaV4.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV4.teritorija.pocetakVladavine.vrednost}} - {{titulaV4.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                             {% endfor %}
@@ -78,6 +88,8 @@
                                                                                 {% for vladar5 in vladar4.potomci %}
                                                                                     {
                                                                                         text: { name: "{{vladar5.ime.vrednost}}",
+                                                                                                supruznik: "{{vladar5.supruznik.labela}} {{vladar5.supruznik.vrednost}}",
+                                                                                                opis: "{{vladar5.opis.labela}} {{vladar5.opis.vrednost}}",
                                                                                         {% for titulaV5 in vladar5.titule %}
                                                                                             titula_{{loop.index}}: "{{titulaV5.tip.labela}}{% if titulaV5.teritorija.naziv != "" %}, {{titulaV5.teritorija.naziv}} {% endif %} {% if titulaV5.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV5.teritorija.pocetakVladavine.vrednost}} - {{titulaV5.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                                         {% endfor %}
@@ -87,6 +99,8 @@
                                                                                             {% for vladar6 in vladar5.potomci %}
                                                                                                 {
                                                                                                     text: { name: "{{vladar6.ime.vrednost}}",
+                                                                                                            supruznik: "{{vladar6.supruznik.labela}} {{vladar6.supruznik.vrednost}}",
+                                                                                                            opis: "{{vladar6.opis.labela}} {{vladar6.opis.vrednost}}",
                                                                                                     {% for titulaV6 in vladar6.titule %}
                                                                                                          titula_{{loop.index}}: "{{titulaV6.tip.labela}}{% if titulaV6.teritorija.naziv != "" %}, {{titulaV6.teritorija.naziv}} {% endif %} {% if titulaV6.teritorija.pocetakVladavine.vrednost > 0 %} ({{titulaV6.teritorija.pocetakVladavine.vrednost}} - {{titulaV6.teritorija.krajVladavine.vrednost}}) {% endif %}",
                                                                                                     {% endfor %}

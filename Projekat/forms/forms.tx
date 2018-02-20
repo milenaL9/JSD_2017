@@ -31,6 +31,8 @@ Vladar:
     "Vladar" "{"
     ime = Ime
     slika = STRING
+    supruznik = Supruznik
+    opis = Opis
     titule += Titula
     potomci *= Vladar
     "Vladar" "}"
