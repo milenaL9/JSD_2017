@@ -1,10 +1,12 @@
 # Gramatika za definisanje rodoslova
-###### JSD 2017
+###### Fakultet tehnickih nauka
+###### Jezici specificni za domen 2017
 
-## Pokretanje modela i aplikacije
-Implementacija je radjena u PyCharm Community Edition 2016.3.2 za Windows.
+## Implementacija
+* [Python](https://docs.python.org/2/index.html) - Programski jezik
+* [PyCharm Community Edition 2016.3.2 za Windows](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Razvojno okruzenje
 
-#### Instalacija Python-a za Windows
+### Instalacija Python-a za Windows
 Za instalaciju na Windows platformi potrebno je preuzeti .exe fajl sa sajta: 
 https://www.python.org/downloads/release/python-353/
 
@@ -31,9 +33,9 @@ Za instalaciju virtualenv alata potreban je instaliran pip alat i za instalaciju
 - Ukucati pip -V. Ispis u konzoli: pip 9.0.1 form neka putanja.
 - Ukucati pip install virtualenv.
 
-#### Instalacija PyCharm
+### Instalacija PyCharm
 
-##### Instalacija Jave
+#### Instalacija Jave
 
 Za pokretanje PyCharmokruženja potrebno je instalirati Javu. Za instalaciju na Windows platformi treba prvo da preuzmete .exe fajl sa sajta:
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
@@ -65,7 +67,7 @@ Kad se završi instalacija potrebno je postaviti JAVA_HOME i PATH sistemsku vari
 - Dugme potvrde Apply Changes
 - Ponovo porenuti Windows. (obavezno)
 
-##### Instalacija PyCharm
+#### Instalacija PyCharm
 
 Potrebno je skinuti odgovaraju'i fajl sa adrese:
 https://www.jetbrains.com/pycharm/download/
@@ -74,7 +76,7 @@ Na toj stranici je potrebno skineti Community verziju koja je besplatna i izaber
 
 Kada se preuzme pycharm-community-Y.Y.Y.exe fajl, gde će Y.Y.Y biti brojevi koji prestavljaju verziju, može se odmah duplim klikomna taj fajl pokrenuti instalaciju. Potrebno je da ispratite sve korake i instaliraćee se IntelliJ na Windows-u. Nakon instalacije trebalo bi da se poajvi ikonica sa nazivom JetBrains PyCharm Community Edition sa kojom je moguće pokreneti razvojno okruženje PyCharm.
 
-##### Inicijalna podešavanja
+#### Inicijalna podešavanja
 
 Kada se prvi put pokrene PyCharm razvojno okruženje potrebno je postaviti početna podešavanja. Na prvom prozoru koji se pojavi potrebno je označiti: I do not have a previous version of PyCharm or I do not want to import my settings. Kliknuti OK.
 
@@ -87,18 +89,57 @@ Zatim će se pojaviti novi prozor, na kojem se postavljaju početna podešavanja
 2. For all users
 - Kliknuti OK
 
-#### Pokretanje projekta
 
+## Instalacija projekta
 - Sa ovog sajta http://www.graphviz.org/download/ skinuti Stable 2.38 Windows install packages (nalazi se u Windows sekciji)
-- Raspakuj arhivu u posebnom folderu.
+- Raspakovati arhivu u posebnom folderu.
 - Dodati putanju do bin direktorijuma Graphviz-a na PATH varijablu.
-- Kreirati folder virtualenviroments.
+- Kreirati folder sa nazivom virtualEnv.
 - Pokrenuti command prompt kao administrator. Ispratiti sledeće korakre:
-1. Pozicionirati se iz komandne linije u folder virtualenviroments.
-2. kucati: virtualenv virtualJSD
-3. kucati: virtualJSD\Scripts\activate
-4. kucati: pip install setuptools
-5. kucati: pip install Arpeggio
-6. kucati: pip install textx
-7. kucati: pip install pydotplus
-8. kucati: pip install jinja2
+1. Pozicionirati se iz komandne linije u folder virtualEnv.
+2. Kreiranje virtuelnog okruzenja
+```
+virtualenv virtualJSD
+```
+3. Aktiviranje virtuelnog okruzenja virtualJSD
+```
+virtualJSD\Scripts\activate
+```
+4. Instalacija setuptools unutar virtuelnog okruzenja virtualJSD
+```
+pip install setuptools
+```
+5. Instalacija Arpeggio unutar virtuelnog okruzenja virtualJSD
+```
+pip install Arpeggio
+```
+6. Instalacija textx unutar virtuelnog okruzenja virtualJSD
+```
+pip install textx
+```
+7. Instalacija pydotplus unutar virtuelnog okruzenja virtualJSD
+```
+pip install pydotplus
+```
+8. Instalacija jinja2 unutar virtuelnog okruzenja virtualJSD
+```
+pip install jinja2
+```
+- Kreirati folder sa nazivom github (van foldera virtualEnv)
+- Kloniranje projekta na lokalnu masinu:
+```
+git clone https://github.com/SvetlanaDjuric/UKS_novi.git
+```
+
+## Pokretanje aplikacije
+Pozicionirati se u folder u kom se nalazi mange.py skripta:
+
+```
+python manage.py runserver
+```
+
+u pretrazivacu kopirati adresu:
+
+```
+http://0.0.0.0:8000/
+```
